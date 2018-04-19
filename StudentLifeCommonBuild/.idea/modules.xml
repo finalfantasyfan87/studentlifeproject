@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/StudentLifeCommonBuild.iml" filepath="$PROJECT_DIR$/StudentLifeCommonBuild.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StudentLifeServiceBuild/StudentLifeServiceBuild.iml" filepath="$PROJECT_DIR$/StudentLifeServiceBuild/StudentLifeServiceBuild.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StudentLifeWebBuild/StudentLifeWebBuild.iml" filepath="$PROJECT_DIR$/StudentLifeWebBuild/StudentLifeWebBuild.iml" />
+    </modules>
+  </component>
+</project>
