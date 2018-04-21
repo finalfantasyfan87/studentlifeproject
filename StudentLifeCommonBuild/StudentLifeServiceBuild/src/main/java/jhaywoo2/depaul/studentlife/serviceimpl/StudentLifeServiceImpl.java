@@ -1,4 +1,10 @@
 package jhaywoo2.depaul.studentlife.serviceimpl;
 
-public class StudentLifeServiceImpl {
+import jhaywoo2.depaul.studentlife.service.StudentLifeService;
+import org.springframework.beans.factory.annotation.Autowired;
+import repository.StudentRepository;
+
+public class StudentLifeServiceImpl implements StudentLifeService {
+    @Autowired
+    StudentRepository studentLifeRepository;
 }
