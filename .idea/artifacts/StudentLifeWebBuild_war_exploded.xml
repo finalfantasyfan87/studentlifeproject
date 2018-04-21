@@ -23,6 +23,7 @@
           <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-core:2.8.2" />
           <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-api:2.8.2" />
           <element id="library" level="project" name="Maven: javax.validation:validation-api:2.0.0.Final" />
+          <element id="library" level="project" name="Maven: org.apache.tomee:openejb-core:7.0.5-SNAPSHOT" />
           <element id="library" level="project" name="Maven: org.springframework.data:spring-data-jpa:1.6.0.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.data:spring-data-commons:1.8.0.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-orm:3.2.9.RELEASE" />
