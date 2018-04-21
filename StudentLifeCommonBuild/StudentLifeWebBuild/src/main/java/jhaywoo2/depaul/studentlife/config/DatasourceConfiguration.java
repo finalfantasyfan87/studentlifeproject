@@ -3,7 +3,7 @@ package jhaywoo2.depaul.studentlife.config;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor;
-import org.springframework.jdbc.datasource.DriverManagerDataSource;
+import org.springframework.jdbc.datasource.lookup.JndiDataSourceLookup;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.JpaVendorAdapter;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
@@ -32,14 +32,10 @@ public class DatasourceConfiguration {
 
     @Bean
     public DataSource dataSource() {
-        DriverManagerDataSource dataSource = new DriverManagerDataSource();
-        dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-        dataSource.setUrl("jdbc:mysql://den1.mysql1.gear.host:3306/studentlifedb");
-        dataSource.setUsername("studentlifedb");
-        dataSource.setPassword("Dd6Z5w_0S4~s");
-        return dataSource;
+        JndiDataSourceLookup jndiLookUp = new JndiDataSourceLookup();
+        jndiLookUp.setResourceRef(true);
+        return jndiLookUp.getDataSource(databaseProperties().getProperty("jndiName"));
     }
-
     @Bean
     public PlatformTransactionManager transactionManager(EntityManagerFactory emf) {
         JpaTransactionManager transactionManager = new JpaTransactionManager();
@@ -54,6 +50,7 @@ public class DatasourceConfiguration {
 
     Properties databaseProperties() {
         Properties properties = new Properties();
+        properties.setProperty("jndiName","jdbc/StudentLife");
         properties.setProperty("hibernate.hbm2ddl.auto", "create-drop");
         properties.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL5Dialect");
         return properties;

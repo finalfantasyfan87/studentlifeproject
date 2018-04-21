@@ -47,8 +47,6 @@
             <artifactId>standard</artifactId>
             <version>${jstl.taglibs.version}</version>
         </dependency>
-
-
         <!-- Servlet Dependency -->
         <dependency>
             <groupId>javax.servlet</groupId>
@@ -79,14 +77,16 @@
         <dependency>
             <groupId>javax.validation</groupId>
             <artifactId>validation-api</artifactId>
-            <version>2.0.0.Final</version>
+            <version>${javax.validation.version}</version>
         </dependency>
     </dependencies>
     <build>
+        <finalName>${finalName.war}</finalName>
         <sourceDirectory>src/main/java</sourceDirectory>
         <resources>
             <resource>
                 <directory>src/main/resources</directory>
+                <filtering>true</filtering>
             </resource>
         </resources>
         <plugins>

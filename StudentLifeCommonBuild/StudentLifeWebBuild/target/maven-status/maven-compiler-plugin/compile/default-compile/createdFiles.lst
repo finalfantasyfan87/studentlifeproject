@@ -1,3 +1,4 @@
 jhaywoo2\depaul\studentlife\config\WebInit.class
-jhaywoo2\DatasourceConfiguration.class
-jhaywoo2\WebConfig.class
+jhaywoo2\depaul\studentlife\config\WebConfig.class
+jhaywoo2\depaul\studentlife\config\DatasourceConfiguration.class
+jhaywoo2\depaul\studentlife\controller\TestController.class

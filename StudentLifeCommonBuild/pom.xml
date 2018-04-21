@@ -15,21 +15,23 @@
 
     <properties>
         <failOnMissingWebXml>false</failOnMissingWebXml>
+        <contextRoot>/studentLife</contextRoot>
         <java.version>1.8</java.version>
         <maven.compiler.version>3.5.1</maven.compiler.version>
-        <spring.version>4.3.14.RELEASE</spring.version>
+        <spring.version>4.3.13.RELEASE</spring.version>
         <jstl.servlet.version>1.2.1</jstl.servlet.version>
         <jstl.taglibs.version>1.1.2</jstl.taglibs.version>
         <servlet.version>3.1.0</servlet.version>
         <jsp.servlet.version>2.3.1</jsp.servlet.version>
-        <maven.ear.version>2.10.1</maven.ear.version>
         <wildfly.version>1.1.0.Alpha10</wildfly.version>
         <local-wildfly-home>/Users/jenny/Documents/wildfly-10.0.0.Final/</local-wildfly-home>
         <log4j2.version>2.8.2</log4j2.version>
+        <spring-data-jpa.version>1.11.3.RELEASE</spring-data-jpa.version>
         <mysql.connector.version>6.0.5</mysql.connector.version>
-        <hibernate.version>5.2.9.Final</hibernate.version>
+        <hibernate.version>4.2.21.Final</hibernate.version>
         <maven.ear.plugin.version>3.0.0</maven.ear.plugin.version>
-        <contextRoot>/studentLife</contextRoot>
+        <javax.validation.version>1.0.0.GA</javax.validation.version>
+        <finalName.war>StudentLife</finalName.war>
     </properties>
 
 
@@ -57,10 +59,8 @@
         <dependency>
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-jpa</artifactId>
-            <version>1.6.0.RELEASE</version>
+            <version>${spring-data-jpa.version}</version>
         </dependency>
-
-
         <!-- JSTL Dependency-->
         <dependency>
             <groupId>javax.servlet.jsp.jstl</groupId>

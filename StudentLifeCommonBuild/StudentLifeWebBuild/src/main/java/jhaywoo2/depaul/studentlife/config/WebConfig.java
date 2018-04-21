@@ -17,6 +17,10 @@ import java.util.List;
 @EnableWebMvc
 @ComponentScan({"jhaywoo2.depaul.studentlife"})
 public class WebConfig extends WebMvcConfigurerAdapter{
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        registry.addResourceHandler("/resources/**").addResourceLocations("/resources/**").setCachePeriod(31556926);
+    }
 
     @Bean
     InternalResourceViewResolver viewResolver(){
@@ -33,10 +37,10 @@ public class WebConfig extends WebMvcConfigurerAdapter{
         myMessageSource.setBasename("messages");
         return myMessageSource;
     }
-    @Override
-    public Validator getValidator() {
-        LocalValidatorFactoryBean myValidator = new LocalValidatorFactoryBean();
-        myValidator.setValidationMessageSource(messageSource());
-        return myValidator;
-    }
+//    @Override
+//    public Validator getValidator() {
+//        LocalValidatorFactoryBean myValidator = new LocalValidatorFactoryBean();
+//        myValidator.setValidationMessageSource(messageSource());
+//        return myValidator;
+//    }
 }
