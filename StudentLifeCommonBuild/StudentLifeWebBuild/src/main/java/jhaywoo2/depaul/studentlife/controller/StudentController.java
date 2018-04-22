@@ -19,7 +19,8 @@ public StudentLifeService studentLifeService;
         ModelAndView view = new ModelAndView();
         view.setViewName("students");
         List students = studentLifeService.getAllStudents();
-        view.addObject("students", students);
+        System.out.println(students);
+        view.addObject("students", students.toString());
 return view;
     }
 }

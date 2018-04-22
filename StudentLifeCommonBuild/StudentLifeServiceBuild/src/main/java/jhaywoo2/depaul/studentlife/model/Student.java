@@ -6,10 +6,19 @@ import java.sql.Timestamp;
 @Entity(name = "students")
 public class Student {
     @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    @Column(name = "studentId")
     private long studentId;
+    @Column(name = "email")
     private String email;
+
+    @Column(name = "password")
     private String password;
+
+    @Column(name = "createdDate")
     private Timestamp createdDate;
+
+    @Column(name = "updatedTime")
     private Timestamp updatedTime;
 
 
@@ -51,5 +60,16 @@ public class Student {
 
     public void setUpdatedTime(Timestamp updatedTime) {
         this.updatedTime = updatedTime;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "studentId=" + studentId +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                ", createdDate=" + createdDate +
+                ", updatedTime=" + updatedTime +
+                '}';
     }
 }

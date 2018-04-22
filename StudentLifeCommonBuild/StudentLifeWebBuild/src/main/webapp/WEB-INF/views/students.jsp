@@ -14,7 +14,7 @@
 <table>
     <tr>
         <th>ID</th>
-        <th>Theme</th>
+        <th>Email</th>
     </tr>
     <c:forEach items="${students}" var="student" varStatus="status">
         <tr>
