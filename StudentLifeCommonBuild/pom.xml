@@ -31,6 +31,7 @@
         <hibernate.version>4.2.21.Final</hibernate.version>
         <maven.ear.plugin.version>3.0.0</maven.ear.plugin.version>
         <javax.validation.version>1.0.0.GA</javax.validation.version>
+        <maven.antrun.version></maven.antrun.version>
         <finalName.war>StudentLife</finalName.war>
     </properties>
 

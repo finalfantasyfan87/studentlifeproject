@@ -14,7 +14,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Controller
-@RequestMapping("/")
 public class StudentController {
     private static final Logger logger = LogManager.getLogger(StudentController.class);
 
@@ -22,13 +21,13 @@ public class StudentController {
     StudentLifeService studentLifeService;
 
     @GetMapping("/getStudents")
-   public  ModelAndView showAllStudents(){
+    public ModelAndView showAllStudents() {
         ModelAndView view = new ModelAndView();
         view.setViewName("students");
-        ArrayList students = studentLifeService.getAllStudents();
-   Student student=     studentLifeService.getOneStudentById();
-        logger.info("Student "+ student);
+        List students = studentLifeService.getAllStudents();
+        Student student = studentLifeService.getOneStudentById();
+        logger.info("Student " + student);
         view.addObject("student", student.toString());
-return view;
+        return view;
     }
 }

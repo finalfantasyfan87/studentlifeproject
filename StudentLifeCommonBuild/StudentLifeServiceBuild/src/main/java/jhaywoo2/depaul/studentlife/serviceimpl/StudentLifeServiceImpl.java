@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import jhaywoo2.depaul.studentlife.repository.StudentRepository;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
+import java.util.List;
 
 @Service("studentServiceLife")
 public class StudentLifeServiceImpl implements StudentLifeService {
@@ -15,8 +15,8 @@ public class StudentLifeServiceImpl implements StudentLifeService {
     protected StudentRepository studentRepository;
 
     @Override
-    public ArrayList getAllStudents() {
-        return null;
+    public List<Student> getAllStudents() {
+        return studentRepository.findAll();
     }
 
     @Override

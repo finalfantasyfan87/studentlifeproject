@@ -1,6 +1,7 @@
 package jhaywoo2.depaul.studentlife.config;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
@@ -17,6 +18,7 @@ import javax.sql.DataSource;
 import java.util.Properties;
 
 @Configuration
+@ComponentScan(basePackages = "jhaywoo2.depaul.studentlife")
 @EnableJpaRepositories(basePackages = "jhaywoo2.depaul.studentlife.repository")
 @EnableTransactionManagement
 public class DatasourceConfiguration {
