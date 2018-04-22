@@ -2,8 +2,8 @@ package jhaywoo2.depaul.studentlife.model;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
-
-@Entity(name = "students")
+@Entity
+@Table(name = "students")
 public class Student {
     @Id
     @Column(name = "studentId")
@@ -14,11 +14,6 @@ public class Student {
     @Column(name = "password")
     private String password;
 
-    @Column(name = "createdDate")
-    private Timestamp createdDate;
-
-    @Column(name = "updatedTime")
-    private Timestamp updatedTime;
 
 
     public long getStudentId() {
@@ -45,21 +40,6 @@ public class Student {
         this.password = password;
     }
 
-    public Timestamp getCreatedDate() {
-        return createdDate;
-    }
-
-    public void setCreatedDate(Timestamp createdDate) {
-        this.createdDate = createdDate;
-    }
-
-    public Timestamp getUpdatedTime() {
-        return updatedTime;
-    }
-
-    public void setUpdatedTime(Timestamp updatedTime) {
-        this.updatedTime = updatedTime;
-    }
 
     @Override
     public String toString() {
@@ -67,8 +47,6 @@ public class Student {
                 "studentId=" + studentId +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
-                ", createdDate=" + createdDate +
-                ", updatedTime=" + updatedTime +
                 '}';
     }
 }

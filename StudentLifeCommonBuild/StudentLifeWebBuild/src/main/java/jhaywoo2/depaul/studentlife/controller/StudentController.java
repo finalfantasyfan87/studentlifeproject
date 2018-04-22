@@ -7,12 +7,14 @@ import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Controller
+@RequestMapping("/")
 public class StudentController {
     private static final Logger logger = LogManager.getLogger(StudentController.class);
 
@@ -25,8 +27,8 @@ public class StudentController {
         view.setViewName("students");
         ArrayList students = studentLifeService.getAllStudents();
    Student student=     studentLifeService.getOneStudentById();
-        logger.info("Students  "+ students);
-        view.addObject("student", student);
+        logger.info("Student "+ student);
+        view.addObject("student", student.toString());
 return view;
     }
 }
