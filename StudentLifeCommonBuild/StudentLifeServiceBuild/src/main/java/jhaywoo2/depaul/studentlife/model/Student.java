@@ -6,7 +6,6 @@ import java.sql.Timestamp;
 @Entity(name = "students")
 public class Student {
     @Id
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
     @Column(name = "studentId")
     private long studentId;
     @Column(name = "email")

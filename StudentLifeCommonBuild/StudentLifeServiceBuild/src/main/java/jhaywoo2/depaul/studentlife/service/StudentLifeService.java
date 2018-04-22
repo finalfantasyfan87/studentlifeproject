@@ -1,8 +1,10 @@
 package jhaywoo2.depaul.studentlife.service;
 
-import org.springframework.stereotype.Service;
+import jhaywoo2.depaul.studentlife.model.Student;
 
-import java.util.List;
+import java.util.ArrayList;
+
 public interface StudentLifeService {
-   public List getAllStudents();
+   public ArrayList getAllStudents();
+   Student getOneStudentById();
 }
