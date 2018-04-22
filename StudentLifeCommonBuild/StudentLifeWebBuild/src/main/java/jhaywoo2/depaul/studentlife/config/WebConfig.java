@@ -15,7 +15,7 @@ import java.util.List;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan({"jhaywoo2.depaul.studentlife"})
+@ComponentScan(basePackages = "jhaywoo2.depaul.studentlife")
 public class WebConfig extends WebMvcConfigurerAdapter{
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {

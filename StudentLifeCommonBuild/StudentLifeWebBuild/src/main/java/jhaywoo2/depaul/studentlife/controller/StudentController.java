@@ -10,8 +10,9 @@ import java.util.List;
 
 @Controller
 public class StudentController {
+
 @Autowired
-protected StudentLifeService studentLifeService;
+public StudentLifeService studentLifeService;
 
     @GetMapping("/getStudents")
     ModelAndView showAllStudents(){

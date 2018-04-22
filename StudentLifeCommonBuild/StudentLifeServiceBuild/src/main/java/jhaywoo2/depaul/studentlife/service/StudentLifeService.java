@@ -6,5 +6,5 @@ import java.util.List;
 
 @Service("studentLifeService")
 public interface StudentLifeService {
-    List getAllStudents();
+   public List getAllStudents();
 }
