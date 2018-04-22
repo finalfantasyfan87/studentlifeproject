@@ -19,25 +19,66 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="StudentController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="StudentController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/java/jhaywoo2/depaul/studentlife/controller/StudentController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="170">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Students.java" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Downloads/Students.java">
+      <file leaf-file-name="StudentLifeServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeServiceBuild/src/main/java/jhaywoo2/depaul/studentlife/serviceimpl/StudentLifeServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="204">
+              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#448#449#0" expanded="true" />
+                <element signature="e#475#476#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Student.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="students.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/webapp/WEB-INF/views/students.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StudentLifeService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeServiceBuild/src/main/java/jhaywoo2/depaul/studentlife/service/StudentLifeService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StudentRepository.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeServiceBuild/src/main/java/jhaywoo2/depaul/studentlife/repository/StudentRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Student.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeServiceBuild/src/main/java/jhaywoo2/depaul/studentlife/model/Student.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
@@ -69,24 +110,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StudentRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeServiceBuild/src/main/java/jhaywoo2/depaul/studentlife/repository/StudentRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Jsp File" />
         <option value="Class" />
       </list>
     </option>
@@ -124,13 +154,15 @@
         <option value="$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeServiceBuild/src/main/java/jhaywoo2/depaul/studentlife/service/StudentLifeServer.java" />
         <option value="$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeServiceBuild/src/main/java/jhaywoo2/depaul/studentlife/service/StudentLifeServiceImpl.java" />
         <option value="$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeServiceBuild/src/main/java/repository/StudentRepository.java" />
-        <option value="$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeServiceBuild/src/main/java/jhaywoo2/depaul/studentlife/service/StudentLifeService.java" />
-        <option value="$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeServiceBuild/src/main/java/jhaywoo2/depaul/studentlife/serviceimpl/StudentLifeServiceImpl.java" />
         <option value="$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/java/jhaywoo2/depaul/studentlife/config/DatasourceConfiguration.java" />
-        <option value="$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/java/jhaywoo2/depaul/studentlife/controller/StudentController.java" />
         <option value="$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeServiceBuild/src/main/java/jhaywoo2/depaul/studentlife/repository/StudentRepository.java" />
         <option value="$USER_HOME$/Downloads/Students.java" />
         <option value="$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeServiceBuild/src/main/java/jhaywoo2/depaul/studentlife/model/Student.java" />
+        <option value="$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeServiceBuild/src/main/java/jhaywoo2/depaul/studentlife/service/StudentLifeService.java" />
+        <option value="$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeServiceBuild/src/main/java/jhaywoo2/depaul/studentlife/serviceimpl/StudentLifeServiceImpl.java" />
+        <option value="$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/webapp/WEB-INF/views/students.jsp" />
+        <option value="$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/java/jhaywoo2/depaul/studentlife/controller/List.java" />
+        <option value="$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/java/jhaywoo2/depaul/studentlife/controller/StudentController.java" />
       </list>
     </option>
   </component>
@@ -403,6 +435,14 @@
               <item name="StudentLifeCommonBuild" type="462c0819:PsiDirectoryNode" />
               <item name="StudentLifeWebBuild" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="studentlifeproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="studentlifeproject" type="462c0819:PsiDirectoryNode" />
+              <item name="StudentLifeCommonBuild" type="462c0819:PsiDirectoryNode" />
+              <item name="StudentLifeWebBuild" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
               <item name="maven-archiver" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -460,6 +500,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.applicationServers" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="jhaywoo2.depaul.studentlife.controller" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\final\Documents\GitHub\studentlifeproject\StudentLifeCommonBuild\StudentLifeServiceBuild\src\main\java\jhaywoo2\studentlife\model" />
       <recent name="C:\Users\final\Documents\GitHub\studentlifeproject\StudentLifeCommonBuild\StudentLifeWebBuild\src\main\webapp\WEB-INF\views" />
@@ -732,12 +775,12 @@
       <option name="presentableId" value="Default" />
       <updated>1524286939844</updated>
       <workItem from="1524286951597" duration="3084000" />
-      <workItem from="1524323013526" duration="26334000" />
+      <workItem from="1524323013526" duration="27643000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29418000" />
+    <option name="totallyTimeSpent" value="30727000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1475" height="793" extended-state="0" />
@@ -763,10 +806,10 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.45930234" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.45930234" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30280247" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30280247" />
       <window_info anchor="right" id="Bean Validation" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32904148" />
@@ -868,23 +911,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeServiceBuild/src/main/java/jhaywoo2/depaul/studentlife/service/StudentLifeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeServiceBuild/src/main/java/jhaywoo2/depaul/studentlife/serviceimpl/StudentLifeServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/java/jhaywoo2/depaul/studentlife/config/DatasourceConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
@@ -892,30 +918,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/java/jhaywoo2/depaul/studentlife/controller/StudentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeServiceBuild/src/main/java/jhaywoo2/depaul/studentlife/repository/StudentRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Students.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
@@ -945,6 +947,65 @@
             <element signature="e#1037#1038#0" expanded="true" />
             <element signature="e#1094#1095#0" expanded="true" />
             <element signature="e#1140#1141#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Students.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeServiceBuild/src/main/java/jhaywoo2/depaul/studentlife/repository/StudentRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeServiceBuild/src/main/java/jhaywoo2/depaul/studentlife/serviceimpl/StudentLifeServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#448#449#0" expanded="true" />
+            <element signature="e#475#476#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/webapp/WEB-INF/views/students.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeServiceBuild/src/main/java/jhaywoo2/depaul/studentlife/service/StudentLifeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/java/jhaywoo2/depaul/studentlife/controller/List.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/java/jhaywoo2/depaul/studentlife/controller/StudentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
