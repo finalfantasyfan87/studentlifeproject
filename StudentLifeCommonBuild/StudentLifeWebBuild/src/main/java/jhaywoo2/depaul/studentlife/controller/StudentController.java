@@ -11,7 +11,7 @@ import java.util.List;
 @Controller
 public class StudentController {
 @Autowired
-    StudentLifeService studentLifeService;
+protected StudentLifeService studentLifeService;
 
     @GetMapping("/getStudents")
     ModelAndView showAllStudents(){

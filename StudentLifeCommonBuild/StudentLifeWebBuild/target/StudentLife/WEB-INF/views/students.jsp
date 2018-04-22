@@ -18,8 +18,8 @@
     </tr>
     <c:forEach items="${students}" var="student" varStatus="status">
         <tr>
-            <td>${student.id}</td>
-            <td>${student.theme}</td>
+            <td>${student.studentId}</td>
+            <td>${student.email}</td>
         </tr>
     </c:forEach>
 </table>
