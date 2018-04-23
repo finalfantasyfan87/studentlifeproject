@@ -33,8 +33,7 @@ public class StudentController {
     }
 
     @GetMapping("/displayRegistrationForm")
-    public ModelAndView showRegistrationForm(@ModelAttribute("student")Student student,
-                                             BindingResult bindingResult){
+    public ModelAndView showRegistrationForm(@ModelAttribute("student")Student student, BindingResult bindingResult){
         ModelAndView mv = new ModelAndView();
         mv.setViewName("register");
         return mv;
