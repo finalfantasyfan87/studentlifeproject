@@ -29,4 +29,9 @@ public class StudentLifeServiceImpl implements StudentLifeService {
         logger.debug("Student from ServiceImpl" + someStudent);
         return someStudent;
     }
+
+    @Override
+    public void studentToDB(Student student) {
+        studentRepository.save(student);
+    }
 }

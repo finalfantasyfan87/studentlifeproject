@@ -7,12 +7,8 @@ import java.sql.Timestamp;
 public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "studentId")
     private long studentId;
-    @Column(name = "email")
     private String email;
-
-    @Column(name = "password")
     private String password;
 
     public long getStudentId() {
