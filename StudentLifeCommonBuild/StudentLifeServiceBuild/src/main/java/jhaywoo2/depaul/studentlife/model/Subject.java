@@ -61,4 +61,16 @@ public class Subject {
     public void setUpdatedDate(Timestamp updatedDate) {
         this.updatedDate = updatedDate;
     }
+
+    @Override
+    public String toString() {
+        return "Subject{" +
+                "subjectId=" + subjectId +
+                ", name='" + name + '\'' +
+                ", departmentId=" + departmentId +
+                ", teacherId=" + teacherId +
+                ", createdDate=" + createdDate +
+                ", updatedDate=" + updatedDate +
+                '}';
+    }
 }

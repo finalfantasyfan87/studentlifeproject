@@ -2,8 +2,8 @@ package jhaywoo2.depaul.studentlife.service;
 
 import jhaywoo2.depaul.studentlife.model.Student;
 
-public interface StudentLifeService {
+public interface StudentService {
    Iterable<Student> getAllStudents();
    Student getOneStudentById();
-   void studentToDB(Student student);
+   void saveStudentToDBs(Student student);
 }

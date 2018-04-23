@@ -1,7 +1,7 @@
 package jhaywoo2.depaul.studentlife.serviceimpl;
 
 import jhaywoo2.depaul.studentlife.model.Student;
-import jhaywoo2.depaul.studentlife.service.StudentLifeService;
+import jhaywoo2.depaul.studentlife.service.StudentService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,7 +9,7 @@ import jhaywoo2.depaul.studentlife.repository.StudentRepository;
 import org.springframework.stereotype.Service;
 
 @Service("studentServiceLife")
-public class StudentLifeServiceImpl implements StudentLifeService {
+public class StudentLifeServiceImpl implements StudentService {
 
     private static final Logger logger = LogManager.getLogger(StudentLifeServiceImpl.class);
 
@@ -31,7 +31,7 @@ public class StudentLifeServiceImpl implements StudentLifeService {
     }
 
     @Override
-    public void studentToDB(Student student) {
+    public void saveStudentToDB(Student student) {
         studentRepository.save(student);
     }
 }

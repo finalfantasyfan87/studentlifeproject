@@ -52,4 +52,15 @@ public class University {
     public void setWebsite(String website) {
         this.website = website;
     }
+
+    @Override
+    public String toString() {
+        return "University{" +
+                "universityId=" + universityId +
+                ", name='" + name + '\'' +
+                ", createdDate=" + createdDate +
+                ", updatedDate=" + updatedDate +
+                ", website='" + website + '\'' +
+                '}';
+    }
 }

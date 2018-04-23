@@ -1,7 +1,7 @@
 package jhaywoo2.depaul.studentlife.controller;
 
 import jhaywoo2.depaul.studentlife.model.Student;
-import jhaywoo2.depaul.studentlife.service.StudentLifeService;
+import jhaywoo2.depaul.studentlife.service.StudentService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,17 +9,14 @@ import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.servlet.ModelAndView;
-
-import javax.enterprise.inject.Model;
 
 @Controller
 public class StudentController {
     private static final Logger logger = LogManager.getLogger(StudentController.class);
 
     @Autowired
-    StudentLifeService studentLifeService;
+    StudentService studentLifeService;
 
     @GetMapping("/showStudents")
     public ModelAndView showAllStudents() {

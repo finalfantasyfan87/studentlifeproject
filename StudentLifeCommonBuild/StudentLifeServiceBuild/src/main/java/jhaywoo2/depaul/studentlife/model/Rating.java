@@ -46,4 +46,22 @@ public class Rating {
     public void setSchoolYear(long schoolYear) {
         this.schoolYear = schoolYear;
     }
+
+    @Override
+    public String toString() {
+        return "Rating{" +
+                "ratingId=" + ratingId +
+                ", clarity=" + clarity +
+                ", schoolYear=" + schoolYear +
+                ", easiness=" + easiness +
+                ", comment='" + comment + '\'' +
+                ", createdDate=" + createdDate +
+                ", updatedDate=" + updatedDate +
+                ", studentId=" + studentId +
+                ", helpfulness=" + helpfulness +
+                ", finalGrade='" + finalGrade + '\'' +
+                ", subject='" + subject + '\'' +
+                ", teacherId=" + teacherId +
+                '}';
+    }
 }
