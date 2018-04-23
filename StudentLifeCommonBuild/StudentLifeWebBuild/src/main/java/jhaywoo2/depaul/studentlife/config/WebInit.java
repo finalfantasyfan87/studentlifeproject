@@ -5,7 +5,8 @@ import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatche
 public class WebInit extends AbstractAnnotationConfigDispatcherServletInitializer {
     @Override
     protected Class<?>[] getRootConfigClasses() {
-        return new Class[]{DatasourceConfiguration.class };
+
+        return new Class[]{WebConfig.class, DatasourceConfiguration.class};
     }
 
     @Override
@@ -15,6 +16,7 @@ public class WebInit extends AbstractAnnotationConfigDispatcherServletInitialize
 
     @Override
     protected String[] getServletMappings() {
+
         return new String[]{"/"};
     }
 }

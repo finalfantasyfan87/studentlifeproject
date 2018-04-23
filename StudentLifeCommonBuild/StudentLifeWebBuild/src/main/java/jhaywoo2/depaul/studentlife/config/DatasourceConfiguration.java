@@ -57,6 +57,12 @@ public class DatasourceConfiguration {
         properties.setProperty("jndiName","jdbc/StudentLife");
         properties.setProperty("hibernate.hbm2ddl.auto", "create-drop");
         properties.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL5Dialect");
+        properties.setProperty("spring.datasource.testWhileIdle", "true");
+        properties.setProperty("spring.datasource.validationQuery", "SELECT 1");
+        properties.setProperty("spring.jpa.show-sql", "true");
+//        properties.setProperty("", "");
+//        properties.setProperty("", "");
+//        properties.setProperty("", "");
         return properties;
     }
 }

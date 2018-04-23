@@ -6,6 +6,7 @@ import java.sql.Timestamp;
 @Table(name = "students")
 public class Student {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "studentId")
     private long studentId;
     @Column(name = "email")
@@ -13,8 +14,6 @@ public class Student {
 
     @Column(name = "password")
     private String password;
-
-
 
     public long getStudentId() {
         return studentId;
