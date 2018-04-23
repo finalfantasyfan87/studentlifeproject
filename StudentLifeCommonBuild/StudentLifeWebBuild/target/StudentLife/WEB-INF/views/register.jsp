@@ -14,12 +14,12 @@
 <div class="container">
     <form:form method="POST" modelAttribute="student" class="form-signin">
         <h2 class="form-signin-heading">Register For StudentLife</h2>
-        <div class="form-group>
-                <form:input type="text" path="email" class="form-control" placeholder="email"
-                            autofocus="true"></form:input>
-                <form:errors path="email"></form:errors>
-            </div>
-        <div class=" form-group>
+        <div class="form-group">
+            <form:input type="email" path="email" class="form-control" placeholder="email"
+                        autofocus="true"></form:input>
+            <form:errors path="email"></form:errors>
+        </div>
+        <div class= "form-group">
             <form:input type="password" path="password" class="form-control" placeholder="password"></form:input>
             <form:errors path="password"></form:errors>
         </div>
