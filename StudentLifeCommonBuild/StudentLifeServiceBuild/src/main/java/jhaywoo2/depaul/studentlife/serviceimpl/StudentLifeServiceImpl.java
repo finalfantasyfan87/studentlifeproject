@@ -31,7 +31,8 @@ public class StudentLifeServiceImpl implements StudentService {
     }
 
     @Override
-    public void saveStudentToDB(Student student) {
+    public void saveStudentToDBs(Student student) {
         studentRepository.save(student);
     }
+
 }

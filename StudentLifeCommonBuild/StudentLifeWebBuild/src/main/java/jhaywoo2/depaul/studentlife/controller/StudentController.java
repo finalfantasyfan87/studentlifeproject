@@ -18,6 +18,14 @@ public class StudentController {
     @Autowired
     StudentService studentLifeService;
 
+
+    @GetMapping("/")
+    public ModelAndView showRegistrationForm(@ModelAttribute("student")Student student, BindingResult bindingResult){
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("register");
+        return mv;
+    }
+
     @GetMapping("/showStudents")
     public ModelAndView showAllStudents() {
         ModelAndView view = new ModelAndView();
@@ -29,10 +37,5 @@ public class StudentController {
         return view;
     }
 
-    @GetMapping("/displayRegistrationForm")
-    public ModelAndView showRegistrationForm(@ModelAttribute("student")Student student, BindingResult bindingResult){
-        ModelAndView mv = new ModelAndView();
-        mv.setViewName("register");
-        return mv;
-    }
+
 }

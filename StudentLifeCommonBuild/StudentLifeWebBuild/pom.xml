@@ -105,10 +105,11 @@
                         </configuration>
                     </execution>
                 </executions>
-                <!--<version>1.8</version>-->
-                <!--<configuration>-->
-
-                <!--</configuration>-->
+            </plugin>
+            <plugin>
+                <groupId>org.wildfly.plugins</groupId>
+                <artifactId>wildfly-maven-plugin</artifactId>
+                <version>${wildfly.version}</version>
             </plugin>
 
             <plugin>

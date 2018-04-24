@@ -23,8 +23,8 @@
         <jstl.taglibs.version>1.1.2</jstl.taglibs.version>
         <servlet.version>3.1.0</servlet.version>
         <jsp.servlet.version>2.3.1</jsp.servlet.version>
-        <wildfly.version>1.1.0.Alpha10</wildfly.version>
-        <local-wildfly-home>/Users/jenny/Documents/wildfly-10.0.0.Final/</local-wildfly-home>
+        <wildfly.version>1.2.1.Final</wildfly.version>
+        <!--<local-wildfly-home>C:\Users\final\Documents\wildfly-12.0.0.Final</local-wildfly-home>-->
         <log4j2.version>2.8.2</log4j2.version>
         <spring-data-jpa.version>1.11.3.RELEASE</spring-data-jpa.version>
         <mysql.connector.version>6.0.5</mysql.connector.version>
