@@ -46,6 +46,11 @@
                     <target>${java.version}</target>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.wildfly.plugins</groupId>
+                <artifactId>wildfly-maven-plugin</artifactId>
+                <version>${wildfly.version}</version>
+            </plugin>
         </plugins>
     </build>
     <dependencies>
@@ -122,6 +127,9 @@
             <artifactId>log4j-api</artifactId>
             <version>${log4j2.version}</version>
         </dependency>
+
+
+
     </dependencies>
 
 </project>

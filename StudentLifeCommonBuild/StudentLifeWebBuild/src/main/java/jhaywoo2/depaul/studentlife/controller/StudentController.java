@@ -19,7 +19,7 @@ public class StudentController {
     StudentService studentLifeService;
 
 
-    @GetMapping("/")
+    @GetMapping("/signUp")
     public ModelAndView showRegistrationForm(@ModelAttribute("student")Student student, BindingResult bindingResult){
         ModelAndView mv = new ModelAndView();
         mv.setViewName("register");
@@ -33,7 +33,7 @@ public class StudentController {
         Iterable<Student> students = studentLifeService.getAllStudents();
         Student student = studentLifeService.getOneStudentById();
         logger.info("Student " + student);
-        view.addObject("student", student.toString());
+        view.addObject("student", student);
         return view;
     }
 
