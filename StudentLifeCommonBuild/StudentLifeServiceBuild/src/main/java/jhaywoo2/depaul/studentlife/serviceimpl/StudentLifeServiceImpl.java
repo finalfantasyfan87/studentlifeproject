@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import jhaywoo2.depaul.studentlife.repository.StudentRepository;
 import org.springframework.stereotype.Service;
 
-@Service("studentServiceLife")
+@Service("studentService")
 public class StudentLifeServiceImpl implements StudentService {
 
     private static final Logger logger = LogManager.getLogger(StudentLifeServiceImpl.class);
@@ -32,6 +32,7 @@ public class StudentLifeServiceImpl implements StudentService {
 
     @Override
     public void saveStudentToDBs(Student student) {
+        logger.debug("Saving student");
         studentRepository.save(student);
     }
 

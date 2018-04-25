@@ -1,6 +1,7 @@
 package jhaywoo2.depaul.studentlife.model;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
 import java.sql.Timestamp;
 @Entity
 @Table(name = "students")
@@ -8,7 +9,12 @@ public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long studentId;
+
+    @NotBlank(message = "{email.NotBlank")
     private String email;
+
+
+    @NotBlank(message = "{password.NotBlank")
     private String password;
 
     public long getStudentId() {

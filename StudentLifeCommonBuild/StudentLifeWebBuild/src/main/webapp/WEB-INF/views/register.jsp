@@ -12,7 +12,7 @@
 </head>
 <body>
 <div class="container">
-    <form:form method="POST" modelAttribute="student" class="form-signin">
+    <form:form action = "register" method="post" modelAttribute="student" class="form-signin">
         <h2 class="form-signin-heading">Register For StudentLife</h2>
         <div class="form-group">
             <form:input type="email" path="email" class="form-control" placeholder="email"
