@@ -1,5 +1,5 @@
-
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
     <title>Students From Database</title>
@@ -10,12 +10,12 @@
         <th>ID</th>
         <th>Email</th>
     </tr>
-    <%--<c:forEach items="${students}" var="student" varStatus="status">--%>
+    <c:forEach items="${students}" var="student" varStatus="status">
         <tr>
             <td>${student.studentId}</td>
             <td>${student.email}</td>
         </tr>
-    <%--</c:forEach>--%>
+    </c:forEach>
 </table>
 </body>
 </html>

@@ -28,7 +28,7 @@ public class StudentController {
     }
 
     @PostMapping("/register")
-    public ModelAndView welcomeNewUser(@Valid @ModelAttribute("student")Student student, BindingResult bindingResult){
+    public ModelAndView welcomeNewUser( @ModelAttribute("student")Student student, BindingResult bindingResult){
         ModelAndView mv = new ModelAndView();
         mv.setViewName("register");
 
@@ -47,10 +47,10 @@ public class StudentController {
         ModelAndView view = new ModelAndView();
         view.setViewName("students");
         Iterable<Student> students = studentService.getAllStudents();
-        Student student = studentService.getOneStudentById();
-        logger.info("Student " + student);
-        view.addObject("students", students);
-        view.addObject("student", student);
+      //  Student student = studentService.getOneStudentById();
+    //    logger.info("Student " + student);
+        view.addObject("students", students.toString());
+       // view.addObject("student", student);
         return view;
     }
 

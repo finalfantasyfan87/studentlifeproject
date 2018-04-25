@@ -10,11 +10,11 @@ public class Student {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long studentId;
 
-    @NotBlank(message = "{email.NotBlank")
+    //@NotBlank(message = "{email.NotBlank")
     private String email;
 
 
-    @NotBlank(message = "{password.NotBlank")
+    //@NotBlank(message = "{password.NotBlank")
     private String password;
 
     public long getStudentId() {

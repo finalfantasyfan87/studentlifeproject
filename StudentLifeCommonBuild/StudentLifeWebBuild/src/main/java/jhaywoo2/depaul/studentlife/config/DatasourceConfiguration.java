@@ -9,6 +9,7 @@ import org.springframework.jdbc.datasource.lookup.JndiDataSourceLookup;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.JpaVendorAdapter;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
+import org.springframework.orm.jpa.vendor.Database;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
@@ -25,10 +26,12 @@ public class DatasourceConfiguration {
     @Bean
     public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
         LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();
-        em.setDataSource(dataSource());
-        em.setPackagesToScan(new String[]{"jhaywoo2.depaul.studentlife.model"});
+        HibernateJpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
+        vendorAdapter.setDatabase(Database.MYSQL);
+        vendorAdapter.setGenerateDdl(true);
 
-        JpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
+        em.setDataSource(dataSource());
+        em.setPackagesToScan("jhaywoo2.depaul.studentlife.model");
         em.setJpaVendorAdapter(vendorAdapter);
         em.setJpaProperties(databaseProperties());
         return em;
@@ -59,7 +62,7 @@ public class DatasourceConfiguration {
         properties.setProperty("spring.datasource.testWhileIdle", "true");
         properties.setProperty("spring.datasource.validationQuery", "SELECT 1");
         properties.setProperty("spring.jpa.show-sql", "true");
-//        properties.setProperty("", "");
+        properties.setProperty("spring.datasource.test-on-borrow", "true");
 //        properties.setProperty("", "");
 //        properties.setProperty("", "");
         return properties;
