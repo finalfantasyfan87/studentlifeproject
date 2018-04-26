@@ -63,7 +63,7 @@ public class DatasourceConfiguration {
         properties.setProperty("spring.datasource.validationQuery", "SELECT 1");
         properties.setProperty("spring.jpa.show-sql", "true");
         properties.setProperty("spring.datasource.test-on-borrow", "true");
-//        properties.setProperty("", "");
+        properties.setProperty("", "com.mysql.jdbc.Driver");
 //        properties.setProperty("", "");
         return properties;
     }

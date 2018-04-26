@@ -7,17 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Sign Up For StudentLife</title>
+    <title>Login To StudentLife</title>
 </head>
 <body>
 <div class="container">
     <form:form action = "registerUser" method="post" modelAttribute="student" class="form-signin">
         <h2 class="form-signin-heading">Register For StudentLife</h2>
-        <div class="form-group">
-            <form:input type="email" path="email" class="form-control" placeholder="email"
-                        autofocus="true"></form:input>
-            <form:errors path="email"></form:errors>
-        </div>
         <div class="form-group">
             <form:input type="userName" path="userName" class="form-control" placeholder="userName"
                         autofocus="true"></form:input>

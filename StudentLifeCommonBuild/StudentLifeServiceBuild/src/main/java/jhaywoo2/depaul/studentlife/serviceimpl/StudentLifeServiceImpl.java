@@ -24,8 +24,8 @@ public class StudentLifeServiceImpl implements StudentService {
     }
 
     @Override
-    public Student getOneStudentById() {
-        Student someStudent = studentRepository.findOne(1L);
+    public Student getOneStudentById(Long studentId) {
+        Student someStudent = studentRepository.findOne(studentId);
         logger.debug("Student from ServiceImpl" + someStudent);
         return someStudent;
     }
@@ -36,4 +36,11 @@ public class StudentLifeServiceImpl implements StudentService {
         studentRepository.save(student);
     }
 
+//    @Override
+//    public String getStudentVerifyMessage(String userName) {
+//if (getAllStudents().iterator().next().getUserName().equals(userName)) {
+//        return "User already exists";
+//    }
+//
+//    return "Welcome"
 }

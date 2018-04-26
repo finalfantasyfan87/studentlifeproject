@@ -27,30 +27,47 @@ public class StudentController {
         return new ModelAndView("register","student", new Student());
     }
 
-    @PostMapping("/register")
+    @PostMapping("/registerUser")
     public ModelAndView welcomeNewUser( @ModelAttribute("student")Student student, BindingResult bindingResult){
         ModelAndView mv = new ModelAndView();
         mv.setViewName("register");
 
         if(bindingResult.hasErrors()){
             mv.setViewName("register");
+            logger.error("An error has occurred.");
             return mv;
         }
         studentService.saveStudentToDBs(student);
-        mv.setViewName("students");
+        mv.setViewName("welcome");
         return mv;
     }
 
 
+    @GetMapping("/login")
+    public ModelAndView showLoginForm(){
+        return new ModelAndView("login", student, new Student());
+    }
+
+    @PostMapping("/loginStudent")
+    public ModelAndView loginStudent(@ModelAttribute("student")Student student, BindingResult bindingResult){
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("login");
+
+        if(bindingResult.hasErrors()){
+            mv.setViewName("login");
+            logger.error("An error has occurred.");
+            return mv;
+        }
+
+
+        return modelAndView;
+    }
     @GetMapping("/showStudents")
     public ModelAndView showAllStudents() {
         ModelAndView view = new ModelAndView();
         view.setViewName("students");
         Iterable<Student> students = studentService.getAllStudents();
-      //  Student student = studentService.getOneStudentById();
-    //    logger.info("Student " + student);
-        view.addObject("students", students.toString());
-       // view.addObject("student", student);
+        view.addObject("students", students);
         return view;
     }
 

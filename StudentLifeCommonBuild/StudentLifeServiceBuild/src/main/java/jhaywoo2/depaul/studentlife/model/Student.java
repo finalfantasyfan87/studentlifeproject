@@ -17,6 +17,8 @@ public class Student {
     //@NotBlank(message = "{password.NotBlank")
     private String password;
 
+    private String userName;
+
     public long getStudentId() {
         return studentId;
     }
@@ -41,6 +43,13 @@ public class Student {
         this.password = password;
     }
 
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
 
     @Override
     public String toString() {
@@ -48,6 +57,7 @@ public class Student {
                 "studentId=" + studentId +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
+                ", userName='" + userName + '\'' +
                 '}';
     }
 }

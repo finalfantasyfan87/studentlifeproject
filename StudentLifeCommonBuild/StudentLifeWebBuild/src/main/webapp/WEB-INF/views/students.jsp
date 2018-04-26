@@ -8,12 +8,12 @@
 <table>
     <tr>
         <th>ID</th>
-        <th>Email</th>
+        <th>Username</th>
     </tr>
     <c:forEach items="${students}" var="student" varStatus="status">
         <tr>
             <td>${student.studentId}</td>
-            <td>${student.email}</td>
+            <td>${student.userName}</td>
         </tr>
     </c:forEach>
 </table>
