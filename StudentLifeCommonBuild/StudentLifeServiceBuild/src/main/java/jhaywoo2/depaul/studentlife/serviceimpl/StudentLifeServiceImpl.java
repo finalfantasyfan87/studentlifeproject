@@ -36,11 +36,10 @@ public class StudentLifeServiceImpl implements StudentService {
         studentRepository.save(student);
     }
 
-//    @Override
-//    public String getStudentVerifyMessage(String userName) {
-//if (getAllStudents().iterator().next().getUserName().equals(userName)) {
-//        return "User already exists";
-//    }
-//
-//    return "Welcome"
+    @Override
+    public boolean doesStudentExist(String userName) {
+        return studentRepository.getNumberOfStudentsThatExist(userName) > 0;
+    }
+
+
 }

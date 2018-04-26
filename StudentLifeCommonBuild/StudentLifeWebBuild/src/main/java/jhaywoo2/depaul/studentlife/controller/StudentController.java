@@ -12,8 +12,6 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import javax.validation.Valid;
-
 @Controller
 public class StudentController {
     private static final Logger logger = LogManager.getLogger(StudentController.class);
@@ -22,7 +20,7 @@ public class StudentController {
     StudentService studentService;
 
 
-    @GetMapping("/signUp")
+    @GetMapping("/registers")
     public ModelAndView showRegistrationForm(){
         return new ModelAndView("register","student", new Student());
     }
@@ -45,7 +43,7 @@ public class StudentController {
 
     @GetMapping("/login")
     public ModelAndView showLoginForm(){
-        return new ModelAndView("login", student, new Student());
+        return new ModelAndView("login", "student", new Student());
     }
 
     @PostMapping("/loginStudent")
@@ -54,12 +52,19 @@ public class StudentController {
         modelAndView.setViewName("login");
 
         if(bindingResult.hasErrors()){
-            mv.setViewName("login");
+            modelAndView.setViewName("login");
             logger.error("An error has occurred.");
-            return mv;
+            return modelAndView;
         }
 
-
+        boolean doesStudentExist = studentService.doesStudentExist(student.getUserName());
+        if (doesStudentExist){
+            modelAndView.setViewName("welcome");
+        } else{
+            String userExistMessage = "Please verify you have an account with us.";
+            modelAndView.setViewName("login");
+            modelAndView.addObject("userExistMessage",userExistMessage);
+        }
         return modelAndView;
     }
     @GetMapping("/showStudents")

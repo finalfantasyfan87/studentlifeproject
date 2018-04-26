@@ -5,5 +5,5 @@ public interface StudentService {
    Iterable<Student> getAllStudents();
    Student getOneStudentById(Long studentId);
    void saveStudentToDBs(Student student);
-   boolean getStudentVerifyMessage();
+   boolean doesStudentExist(String userName);
 }
