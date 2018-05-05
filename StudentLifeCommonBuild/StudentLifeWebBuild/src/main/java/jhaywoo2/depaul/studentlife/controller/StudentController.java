@@ -20,7 +20,7 @@ public class StudentController {
     StudentService studentService;
 
 
-    @GetMapping("/registers")
+    @GetMapping("/register")
     public ModelAndView showRegistrationForm(){
         return new ModelAndView("register","student", new Student());
     }
