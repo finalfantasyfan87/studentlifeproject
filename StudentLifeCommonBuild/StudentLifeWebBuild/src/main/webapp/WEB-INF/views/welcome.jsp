@@ -1,9 +1,6 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-s<html>
-<head>
-    <title>Welcome</title>
-</head>
+<jsp:include page="common/header.jsp" />
 <body>
 <p>Welcome ${student.userName}</p>
+<jsp:include page="common/header.jsp" />
 </body>
 </html>

@@ -12,8 +12,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </head>
-<body>
-<!-- Static navbar -->
+
+
 <div class="navbar navbar-inverse navbar-static-top">
     <div class="container">
         <div class="navbar-header">

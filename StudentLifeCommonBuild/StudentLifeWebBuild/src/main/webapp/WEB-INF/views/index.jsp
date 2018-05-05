@@ -1,5 +1,6 @@
-<html>
+<jsp:include page="common/header.jsp" />
 <body>
-<h2>Welcome to StudentLife!</h2>
+<p>Welcome to MyStudentLife</p>
+<jsp:include page="common/header.jsp" />
 </body>
 </html>
