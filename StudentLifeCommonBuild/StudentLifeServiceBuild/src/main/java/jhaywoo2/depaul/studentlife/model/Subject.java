@@ -1,18 +1,25 @@
 package jhaywoo2.depaul.studentlife.model;
 
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedDate;
+
 import javax.persistence.*;
 import java.sql.Timestamp;
+import java.util.Date;
+
 @Entity
 @Table(name = "subjects")
-public class Subject {
+public class Subject extends Auditable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long subjectId;
     private String name;
     private long departmentId;
     private long teacherId;
-    private Timestamp createdDate;
-    private Timestamp updatedDate;
+    @CreatedDate
+    private Date createdDate;
+    @LastModifiedDate
+    private Date updatedDate;
 
     public long getSubjectId() {
         return subjectId;
@@ -46,16 +53,20 @@ public class Subject {
         this.teacherId = teacherId;
     }
 
-    public Timestamp getCreatedDate() {
+    public Date getCreatedDate() {
         return createdDate;
     }
 
-    public void setCreatedDate(Timestamp createdDate) {
+    public void setCreatedDate(Date createdDate) {
         this.createdDate = createdDate;
     }
 
-    public Timestamp getUpdatedDate() {
+    public Date getUpdatedDate() {
         return updatedDate;
+    }
+
+    public void setUpdatedDate(Date updatedDate) {
+        this.updatedDate = updatedDate;
     }
 
     public void setUpdatedDate(Timestamp updatedDate) {

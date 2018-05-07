@@ -4,6 +4,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.jdbc.datasource.lookup.JndiDataSourceLookup;
 import org.springframework.orm.jpa.JpaTransactionManager;
@@ -22,6 +23,7 @@ import java.util.Properties;
 @ComponentScan(basePackages = "jhaywoo2.depaul.studentlife")
 @EnableJpaRepositories(basePackages = "jhaywoo2.depaul.studentlife.repository")
 @EnableTransactionManagement
+@EnableJpaAuditing
 public class DatasourceConfiguration {
     @Bean
     public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
@@ -62,7 +64,7 @@ public class DatasourceConfiguration {
         properties.setProperty("spring.datasource.testWhileIdle", "true");
         properties.setProperty("spring.datasource.validationQuery", "SELECT 1");
         properties.setProperty("spring.jpa.show-sql", "true");
-        properties.setProperty("spring.datasource.test-on-borrow", "true");
+        properties.setProperty("spring.datasource.timeBetweenEvictionRunsMillis", "60000");
         return properties;
     }
 }
