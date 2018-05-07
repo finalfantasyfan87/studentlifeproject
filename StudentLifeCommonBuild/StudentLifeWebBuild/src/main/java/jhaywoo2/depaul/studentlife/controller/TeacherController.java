@@ -11,6 +11,7 @@ public class TeacherController {
    public ModelAndView displayTeachers(){
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("teachers");
+
         return modelAndView;
     }
 }

@@ -2,9 +2,10 @@
 <body>
 
 <!-- +++++ Footer Section +++++ -->
-
+<br>
+<br>
 <div id="footer">
-    <div class="container">
+    <div class="navbar navbar-expand-lg navbar-light" style="background-color:#e3f2fd;">
         <div class="row">
             <div class="col-lg-8">
                 <h4>My Links</h4>

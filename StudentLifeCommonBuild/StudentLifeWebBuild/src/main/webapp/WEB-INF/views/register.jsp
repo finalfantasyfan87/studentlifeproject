@@ -23,9 +23,9 @@
             <form:input type="password" path="password" class="col-sm-4" placeholder="password"></form:input>
             <form:errors path="password"></form:errors>
         </div>
-        <div class= "form-group row">
+        <span class= "button">
         <button class="btn btn-lg btn-primary" type="submit">Submit</button>
-        </div>
+        </span>
     </form:form>
 </div>
 <jsp:include page="common/footer.jsp" />
