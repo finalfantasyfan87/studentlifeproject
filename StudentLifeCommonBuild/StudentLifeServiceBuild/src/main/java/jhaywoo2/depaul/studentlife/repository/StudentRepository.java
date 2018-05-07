@@ -8,6 +8,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface StudentRepository extends JpaRepository<Student, Long> {
-    @Query(value = "Select count (s) as totalStudents from Student s where s.userName = :userName")
+    @Query(value = "Select count (s) as totalStudents from Student s where s.userName = ?1")
     public int getNumberOfStudentsThatExist(String username);
 }

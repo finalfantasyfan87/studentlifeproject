@@ -51,7 +51,7 @@ public class StudentController {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("login");
 
-        if(bindingResult.hasErrors()){
+        if(bindingResult.hasFieldErrors()){
             modelAndView.setViewName("login");
             logger.error("An error has occurred.");
             return modelAndView;

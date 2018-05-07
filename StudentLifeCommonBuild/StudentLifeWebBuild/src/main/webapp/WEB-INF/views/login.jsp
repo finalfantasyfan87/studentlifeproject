@@ -1,7 +1,7 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <jsp:include page="common/header.jsp" />
 <div class="container">
-    <form:form action = "registerUser" method="post" modelAttribute="student" class="form-signin">
+    <form:form action = "loginStudent" method="post" modelAttribute="student" class="form-signin">
         <h2 class="form-signin-heading">Register For StudentLife</h2>
         <div class="form-group row">
             <form:input type="userName" path="userName" class="col-sm-4" placeholder="userName"
