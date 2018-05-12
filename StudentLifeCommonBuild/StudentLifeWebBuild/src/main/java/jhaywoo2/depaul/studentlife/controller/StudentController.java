@@ -67,7 +67,7 @@ public class StudentController {
         }
         return modelAndView;
     }
-    @GetMapping("/showStudents")
+    @GetMapping("/displayStudents")
     public ModelAndView showAllStudents() {
         ModelAndView view = new ModelAndView();
         view.setViewName("students");
