@@ -1,6 +1,2 @@
+*/target/*
 
-*.jar
-.idea/libraries/Maven__commons_dbcp_commons_dbcp_1_4.xml
-*.iml
-/target/
-*.iml
