@@ -5,7 +5,7 @@
 <br>
 <div class="container">
     <form:form action = "registerUser" method="post" modelAttribute="student" class="form-signin">
-        <h2 class="form-signin-heading">Register For StudentLife</h2>
+        <h2 class="form-signin-heading">Register For MyStudentLife</h2>
         <div class="form-group row">
             <label for="email" class="col-sm-2 col-form-label">Email</label>
             <form:input type="email" path="email" class="col-sm-4" placeholder="email"
