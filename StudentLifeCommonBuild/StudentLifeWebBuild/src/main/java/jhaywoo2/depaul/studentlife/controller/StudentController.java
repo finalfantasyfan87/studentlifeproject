@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.validation.Valid;
+
 @Controller
 public class StudentController {
     private static final Logger logger = LogManager.getLogger(StudentController.class);
@@ -26,7 +28,7 @@ public class StudentController {
     }
 
     @PostMapping("/registerUser")
-    public ModelAndView welcomeNewUser( @ModelAttribute("student")Student student, BindingResult bindingResult){
+    public ModelAndView welcomeNewUser( @ModelAttribute("student")  @Valid Student student, BindingResult bindingResult){
         ModelAndView mv = new ModelAndView();
         mv.setViewName("register");
 
@@ -47,7 +49,7 @@ public class StudentController {
     }
 
     @PostMapping("/loginStudent")
-    public ModelAndView loginStudent(@ModelAttribute("student")Student student, BindingResult bindingResult){
+    public ModelAndView loginStudent(@ModelAttribute("student") @Valid Student student, BindingResult bindingResult){
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("login");
 

@@ -7,12 +7,12 @@
             <label for="userName" class="col-sm-2 col-form-label">Username</label>
             <form:input type="userName" path="userName" class="col-sm-4" placeholder="username"
                         autofocus="true"></form:input>
-            <form:errors path="userName"></form:errors>
+            <form:errors path="userName" element = "div" class="has-error"></form:errors>
         </div>
         <div class= "form-group row">
             <label for="password" class="col-sm-2 col-form-label">Password</label>
             <form:input type="password" path="password" class="col-sm-4" placeholder="password"></form:input>
-            <form:errors path="password"></form:errors>
+            <form:errors path="password" element = "div" cssClass="error"></form:errors>
         </div>
     <span class= "button">
         <button class="btn btn-lg btn-primary" type="submit">Submit</button>

@@ -1,11 +1,11 @@
 package jhaywoo2.depaul.studentlife.model;
 
+import org.hibernate.validator.constraints.Email;
+import org.hibernate.validator.constraints.NotBlank;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotBlank;
-import java.sql.Timestamp;
 import java.util.Date;
 
 @Entity
@@ -15,11 +15,14 @@ public class Student extends Auditable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long studentId;
 
-    //@NotBlank(message = "{email.NotBlank")
+    @NotBlank(message = "Please enter email!")
+    @Email(message = "Please enter a valid email")
     private String email;
-    //@NotBlank(message = "{password.NotBlank")
+
+    @NotBlank(message = "Please enter a 10 character password.")
     private String password;
 
+    @NotBlank(message = "Please enter a username.")
     private String userName;
 
     @CreatedDate
