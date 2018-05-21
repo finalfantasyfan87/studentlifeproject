@@ -32,34 +32,34 @@ public class DatasourceConfiguration {
         HibernateJpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
         vendorAdapter.setDatabase(Database.MYSQL);
         vendorAdapter.setGenerateDdl(true);
-
+        em.setJpaProperties(databaseProperties());
         em.setDataSource(localDataSource());
         em.setPackagesToScan("jhaywoo2.depaul.studentlife.model");
         em.setJpaVendorAdapter(vendorAdapter);
-        em.setJpaProperties(databaseProperties());
+
         return em;
     }
 
-    @Bean
+     @Bean
     public DataSource localDataSource() {
         JndiDataSourceLookup jndiLookUp = new JndiDataSourceLookup();
         jndiLookUp.setResourceRef(true);
         return jndiLookUp.getDataSource(databaseProperties().getProperty("jndiName"));
     }
+/**  @Bean
+    public BasicDataSource dataSource() throws URISyntaxException {
+        String dbUrl = System.getenv("JDBC_DATABASE_URL");
+        String username = System.getenv("JDBC_DATABASE_USERNAME");
+        String password = System.getenv("JDBC_DATABASE_PASSWORD");
 
-//    @Bean
-//    public BasicDataSource dataSource() throws URISyntaxException {
-//        String dbUrl = System.getenv("JDBC_DATABASE_URL");
-//        String username = System.getenv("JDBC_DATABASE_USERNAME");
-//        String password = System.getenv("JDBC_DATABASE_PASSWORD");
-//
-//        BasicDataSource basicDataSource = new BasicDataSource();
-//        basicDataSource.setUrl(dbUrl);
-//        basicDataSource.setUsername(username);
-//        basicDataSource.setPassword(password);
-//
-//        return basicDataSource;
-//    }
+        BasicDataSource basicDataSource = new BasicDataSource();
+        basicDataSource.setUrl(dbUrl);
+        basicDataSource.setUsername(username);
+        basicDataSource.setPassword(password);
+
+        return basicDataSource;
+    }**/
+
     @Bean
     public PlatformTransactionManager transactionManager(EntityManagerFactory emf) {
         JpaTransactionManager transactionManager = new JpaTransactionManager();
@@ -77,9 +77,11 @@ public class DatasourceConfiguration {
         properties.setProperty("jndiName","jdbc/StudentLife");
         properties.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL5Dialect");
         properties.setProperty("spring.datasource.testWhileIdle", "true");
+        properties.setProperty("testOnBorrow","true");
         properties.setProperty("spring.datasource.validationQuery", "SELECT 1");
-        properties.setProperty("spring.jpa.show-sql", "true");
-        properties.setProperty("spring.datasource.timeBetweenEvictionRunsMillis", "60000");
+        //properties.setProperty("spring.jpa.show-sql", "true");
+        properties.setProperty("spring.datasource.timeBetweenEvictionRunsMillis", "200000");
+
         return properties;
     }
 }

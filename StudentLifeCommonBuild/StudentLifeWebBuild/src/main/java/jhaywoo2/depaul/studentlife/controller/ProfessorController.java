@@ -23,5 +23,12 @@ public class ProfessorController {
         return modelAndView;
     }
 
+    @GetMapping("/rateTeacher")
+    public ModelAndView showRateTeacherPage(){
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("rateTeacher");
+        return modelAndView;
+    }
+
 
 }
