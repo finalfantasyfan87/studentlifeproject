@@ -10,7 +10,8 @@ public class Professor {
   @GeneratedValue(strategy = GenerationType.AUTO)
   private long professorId;
 
-  @ManyToOne(fetch = FetchType.EAGER)
+  @ManyToOne
+  @JoinColumn(name = "departmentId")
   private Department department;
 
   private String name;

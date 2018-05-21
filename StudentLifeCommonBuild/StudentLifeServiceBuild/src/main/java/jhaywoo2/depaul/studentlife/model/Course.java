@@ -8,6 +8,8 @@ public class Course {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long courseId;
+
+    @
     private long departmentId;
     private long number;
     private String title;
@@ -58,4 +60,15 @@ public class Course {
         this.credits = credits;
     }
 
+    @Override
+    public String toString() {
+        final StringBuffer sb = new StringBuffer("Course{");
+        sb.append("courseId=").append(courseId);
+        sb.append(", departmentId=").append(departmentId);
+        sb.append(", number=").append(number);
+        sb.append(", title='").append(title).append('\'');
+        sb.append(", credits='").append(credits).append('\'');
+        sb.append('}');
+        return sb.toString();
+    }
 }
