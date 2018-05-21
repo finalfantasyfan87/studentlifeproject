@@ -7,7 +7,7 @@ import org.springframework.data.annotation.CreatedDate;
 import javax.persistence.*;
 import java.util.Date;
 
-@Entity
+@Entity(name = "Student")
 @Table(name = "students")
 public class Student extends Auditable {
     @Id
@@ -26,8 +26,6 @@ public class Student extends Auditable {
 
     @CreatedDate
     private Date createdDate;
-
-//    private Course course;
 
 
     public long getStudentId() {
@@ -70,4 +68,15 @@ public class Student extends Auditable {
         this.createdDate = createdDate;
     }
 
+    @Override
+    public String toString() {
+        final StringBuffer sb = new StringBuffer("Student{");
+        sb.append("studentId=").append(studentId);
+        sb.append(", email='").append(email).append('\'');
+        sb.append(", password='").append(password).append('\'');
+        sb.append(", userName='").append(userName).append('\'');
+        sb.append(", createdDate=").append(createdDate);
+        sb.append('}');
+        return sb.toString();
+    }
 }

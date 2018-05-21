@@ -2,7 +2,7 @@ package jhaywoo2.depaul.studentlife.model;
 
 import javax.persistence.*;
 
-@Entity
+@Entity(name = "Department")
 @Table(name = "department")
 public class Department {
     @Id

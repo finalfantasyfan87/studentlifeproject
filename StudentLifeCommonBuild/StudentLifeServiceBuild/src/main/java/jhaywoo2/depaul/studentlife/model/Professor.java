@@ -2,8 +2,10 @@ package jhaywoo2.depaul.studentlife.model;
 
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
-@Entity
+@Entity(name = "Professor")
 @Table(name = "professor")
 public class Professor {
   @Id
@@ -13,6 +15,9 @@ public class Professor {
   @ManyToOne
   @JoinColumn(name = "departmentId")
   private Department department;
+
+  @OneToMany(mappedBy = "professor", fetch=FetchType.LAZY)
+  private List<Course> courseList = new ArrayList<Course>();
 
   private String name;
 
@@ -41,13 +46,22 @@ public class Professor {
     this.name = name;
   }
 
-    @Override
-    public String toString() {
-        final StringBuffer sb = new StringBuffer("Professor{");
-        sb.append("professorId=").append(professorId);
-        sb.append(", department=").append(department);
-        sb.append(", name='").append(name).append('\'');
-        sb.append('}');
-        return sb.toString();
-    }
+  public List<Course> getCourseList() {
+    return courseList;
+  }
+
+  public void setCourseList(List<Course> courseList) {
+    this.courseList = courseList;
+  }
+
+  @Override
+  public String toString() {
+    final StringBuffer sb = new StringBuffer("Professor{");
+    sb.append("professorId=").append(professorId);
+    sb.append(", department=").append(department);
+//    sb.append(", courseList=").append(courseList);
+    sb.append(", name='").append(name).append('\'');
+    sb.append('}');
+    return sb.toString();
+  }
 }

@@ -5,7 +5,7 @@
 <br>
 <br>
 <div id="footer">
-    <div class="navbar navbar-expand-lg navbar-light" style="background-color:#e3f2fd;">
+    <div class="navbar navbar-expand-lg navbar-light" style="background-color:#e1bee7;">
         <div class="row">
             <div class="col-lg-8">
                 <h4>My Links</h4>

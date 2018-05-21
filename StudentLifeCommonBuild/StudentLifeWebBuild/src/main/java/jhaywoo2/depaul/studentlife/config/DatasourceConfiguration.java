@@ -78,8 +78,6 @@ public class DatasourceConfiguration {
         properties.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL5Dialect");
         properties.setProperty("spring.datasource.testWhileIdle", "true");
         properties.setProperty("testOnBorrow","true");
-        properties.setProperty("spring.datasource.validationQuery", "SELECT 1");
-        //properties.setProperty("spring.jpa.show-sql", "true");
         properties.setProperty("spring.datasource.timeBetweenEvictionRunsMillis", "200000");
 
         return properties;
