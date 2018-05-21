@@ -3,7 +3,6 @@ package jhaywoo2.depaul.studentlife.model;
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotBlank;
 import org.springframework.data.annotation.CreatedDate;
-import org.springframework.data.annotation.LastModifiedDate;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -28,8 +27,8 @@ public class Student extends Auditable {
     @CreatedDate
     private Date createdDate;
 
-    @LastModifiedDate
-    private Date updatedDate;
+//    private Course course;
+
 
     public long getStudentId() {
         return studentId;
@@ -71,23 +70,4 @@ public class Student extends Auditable {
         this.createdDate = createdDate;
     }
 
-    public Date getUpdatedDate() {
-        return updatedDate;
-    }
-
-    public void setUpdatedDate(Date updatedDate) {
-        this.updatedDate = updatedDate;
-    }
-
-    @Override
-    public String toString() {
-        return "Student{" +
-                "studentId=" + studentId +
-                ", email='" + email + '\'' +
-                ", password='" + password + '\'' +
-                ", userName='" + userName + '\'' +
-                ", createdDate=" + createdDate +
-                ", updatedDate=" + updatedDate +
-                '}';
-    }
 }

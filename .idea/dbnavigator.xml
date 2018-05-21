@@ -27,13 +27,44 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="e48ef94c-e3b9-4a9c-9e63-df69e02b4198">
-      <console name="StudentLifeDb" type="STANDARD"><![CDATA[select * from studentlifedb.students;]]></console>
+      <console name="StudentLifeDb" type="STANDARD"><![CDATA[INSERT INTO departments (`departmentId`, name) VALUES 
+(1, 'EECS'), 
+(2, 'SAC'), 
+(3, 'MATH'), 
+(4, 'ECON'), 
+(5, 'ASIAN'), 
+(6, 'ENGR'), 
+(7, 'ENGLISH'), 
+(8, 'PSYCH'), 
+(9, 'LING'), 
+(10, 'PHYSICS'), 
+(11, 'EARTH'), 
+(12, 'ASTRO'), 
+(13, 'ASIANLAN'), 
+(14, 'PHIL'), 
+(15, 'STATS'), 
+(16, 'DANCE'), 
+(17, 'UC'), 
+(18, 'HISTORY'), 
+(19, 'RCHUMS'), 
+(20, 'POLSCI'), 
+(21, 'MUSEUMS'), 
+(22, 'ACC'), 
+(23, 'SOC'), 
+(24, 'FRENCH'), 
+(25, 'MECHENG');
+
+alter table departments drop column createdDate;
+
+alter table teachers drop column middleName;
+alter table teachers drop column updatedDate;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="e48ef94c-e3b9-4a9c-9e63-df69e02b4198" />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-list connection-id="e48ef94c-e3b9-4a9c-9e63-df69e02b4198" dataset="studentlifedb.ratings" active-filter-id="" />
     <filter-list connection-id="e48ef94c-e3b9-4a9c-9e63-df69e02b4198" dataset="studentlifedb.departments" active-filter-id="EMPTY_FILTER" />
     <filter-list connection-id="e48ef94c-e3b9-4a9c-9e63-df69e02b4198" dataset="studentlifedb.universities" active-filter-id="">
       <filter id="133138f8-9aff-40d8-bc63-676d0b2a93ef" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
@@ -41,6 +72,7 @@
       </filter>
     </filter-list>
     <filter-list connection-id="e48ef94c-e3b9-4a9c-9e63-df69e02b4198" dataset="studentlifedb.students" active-filter-id="EMPTY_FILTER" />
+    <filter-list connection-id="e48ef94c-e3b9-4a9c-9e63-df69e02b4198" dataset="studentlifedb.subjects" active-filter-id="" />
     <filter-list connection-id="e48ef94c-e3b9-4a9c-9e63-df69e02b4198" dataset="studentlifedb.teachers" active-filter-id="EMPTY_FILTER">
       <filter id="2cfb9c14-0d01-4974-866b-67d624fbd1ae" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
         <condition column="teacherId" operator="=" value="" active="true" />

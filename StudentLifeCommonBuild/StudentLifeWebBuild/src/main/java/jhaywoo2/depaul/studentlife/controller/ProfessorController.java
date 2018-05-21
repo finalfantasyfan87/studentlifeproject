@@ -1,7 +1,7 @@
 package jhaywoo2.depaul.studentlife.controller;
 
-import jhaywoo2.depaul.studentlife.model.Teacher;
-import jhaywoo2.depaul.studentlife.service.TeacherService;
+import jhaywoo2.depaul.studentlife.model.Professor;
+import jhaywoo2.depaul.studentlife.service.ProfessorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,16 +10,16 @@ import org.springframework.web.servlet.ModelAndView;
 import java.util.List;
 
 @Controller
-public class TeacherController {
+public class ProfessorController {
     @Autowired
-    protected TeacherService teacherService;
+    protected ProfessorService professorService;
 
     @GetMapping("/displayTeachers")
    public ModelAndView displayTeachers(){
         ModelAndView modelAndView = new ModelAndView();
-        modelAndView.setViewName("teachers");
-        List<Teacher> teachers= teacherService.showAllTeachers();
-        modelAndView.addObject("teachers", teachers);
+        modelAndView.setViewName("professors");
+        List<Professor> professors= professorService.showAllProfessors();
+        modelAndView.addObject("professors", professors);
         return modelAndView;
     }
 

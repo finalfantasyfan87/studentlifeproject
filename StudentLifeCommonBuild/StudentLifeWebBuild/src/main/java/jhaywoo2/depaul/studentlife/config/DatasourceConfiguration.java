@@ -1,12 +1,12 @@
 package jhaywoo2.depaul.studentlife.config;
 
-import org.apache.commons.dbcp.BasicDataSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.jdbc.datasource.lookup.JndiDataSourceLookup;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.Database;
@@ -15,6 +15,7 @@ import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import javax.persistence.EntityManagerFactory;
+import javax.sql.DataSource;
 import java.net.URISyntaxException;
 import java.util.Properties;
 
@@ -32,33 +33,33 @@ public class DatasourceConfiguration {
         vendorAdapter.setDatabase(Database.MYSQL);
         vendorAdapter.setGenerateDdl(true);
 
-        em.setDataSource(dataSource());
+        em.setDataSource(localDataSource());
         em.setPackagesToScan("jhaywoo2.depaul.studentlife.model");
         em.setJpaVendorAdapter(vendorAdapter);
         em.setJpaProperties(databaseProperties());
         return em;
     }
 
-//    @Bean
-//    public DataSource dataSource() {
-//        JndiDataSourceLookup jndiLookUp = new JndiDataSourceLookup();
-//        jndiLookUp.setResourceRef(true);
-//        return jndiLookUp.getDataSource(databaseProperties().getProperty("jndiName"));
-//    }
-
     @Bean
-    public BasicDataSource dataSource() throws URISyntaxException {
-        String dbUrl = System.getenv("JDBC_DATABASE_URL");
-        String username = System.getenv("JDBC_DATABASE_USERNAME");
-        String password = System.getenv("JDBC_DATABASE_PASSWORD");
-
-        BasicDataSource basicDataSource = new BasicDataSource();
-        basicDataSource.setUrl(dbUrl);
-        basicDataSource.setUsername(username);
-        basicDataSource.setPassword(password);
-
-        return basicDataSource;
+    public DataSource localDataSource() {
+        JndiDataSourceLookup jndiLookUp = new JndiDataSourceLookup();
+        jndiLookUp.setResourceRef(true);
+        return jndiLookUp.getDataSource(databaseProperties().getProperty("jndiName"));
     }
+
+//    @Bean
+//    public BasicDataSource dataSource() throws URISyntaxException {
+//        String dbUrl = System.getenv("JDBC_DATABASE_URL");
+//        String username = System.getenv("JDBC_DATABASE_USERNAME");
+//        String password = System.getenv("JDBC_DATABASE_PASSWORD");
+//
+//        BasicDataSource basicDataSource = new BasicDataSource();
+//        basicDataSource.setUrl(dbUrl);
+//        basicDataSource.setUsername(username);
+//        basicDataSource.setPassword(password);
+//
+//        return basicDataSource;
+//    }
     @Bean
     public PlatformTransactionManager transactionManager(EntityManagerFactory emf) {
         JpaTransactionManager transactionManager = new JpaTransactionManager();
