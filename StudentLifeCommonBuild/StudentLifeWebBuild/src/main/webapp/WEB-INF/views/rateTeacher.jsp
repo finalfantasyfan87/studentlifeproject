@@ -3,17 +3,16 @@
 <body>
 
 <article>
-    <h2><a href="singlepost.html">Rating for Professor</a></h2>
+    <h2><a href="singlepost.html" align="center">Rating for Professor, ${profiledProfessor.name}</a></h2>
 
     <div class="row">
         <div class="group1 col-sm-6 col-md-6">
-            <span class="glyphicon glyphicon-folder-open"></span> <a href="#">Signs</a>
-            <span class="glyphicon glyphicon-bookmark"></span> <a href="#">Aries</a>,
-            <a href="#">Fire</a>, <a href="#">Mars</a>
+            <span class="glyphicon glyphicon-folder-open"></span> <a href="#">Rate</a>
+            <span class="glyphicon glyphicon-bookmark"></span> <a href="#">Message</a>
         </div>
         <div class="group2 col-sm-6 col-md-6">
             <span class="glyphicon glyphicon-pencil"></span> <a href="singlepost.html#comments">20 Comments</a>
-            <span class="glyphicon glyphicon-time"></span> August 24, 2013 9:00 PM
+            <span class="glyphicon glyphicon-time"></span> May 16, 2018 9:00 PM
         </div>
     </div>
 
@@ -35,6 +34,7 @@
 
     <hr>
 </article>
-<jsp:include page="common/footer.jsp"/>
+
 </body>
+<jsp:include page="common/footer.jsp"/>
 </html>

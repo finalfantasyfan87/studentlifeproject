@@ -20,62 +20,68 @@ public class StudentController {
 
     @Autowired
     StudentService studentService;
+    String genericError = "An error has occurred";
 
 
     @GetMapping("/register")
-    public ModelAndView showRegistrationForm(){
-        return new ModelAndView("register","student", new Student());
+    public ModelAndView showRegistrationForm() {
+        return new ModelAndView("register", "student", new Student());
     }
 
     @PostMapping("/registerUser")
-    public ModelAndView welcomeNewUser( @ModelAttribute("student")  @Valid Student student, BindingResult bindingResult){
-        ModelAndView mv = new ModelAndView();
-        mv.setViewName("register");
+    public ModelAndView welcomeNewUser(@ModelAttribute("student") @Valid Student student, BindingResult bindingResult) {
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("register");
 
-        if(bindingResult.hasErrors()){
-            mv.setViewName("register");
-            logger.error("An error has occurred.");
-            return mv;
+        if (bindingResult.hasErrors()) {
+            modelAndView.setViewName("register");
+            logger.error(genericError);
+            modelAndView.addObject("genericError", genericError);
+            return modelAndView;
         }
         studentService.saveStudentToDBs(student);
-        mv.setViewName("welcome");
-        return mv;
+        modelAndView.setViewName("welcome");
+        return modelAndView;
     }
 
 
     @GetMapping("/login")
-    public ModelAndView showLoginForm(){
+    public ModelAndView showLoginForm() {
         return new ModelAndView("login", "student", new Student());
     }
 
     @PostMapping("/loginStudent")
-    public ModelAndView loginStudent(@ModelAttribute("student") @Valid Student student, BindingResult bindingResult){
+    public ModelAndView loginStudent(@ModelAttribute("student") @Valid Student student, BindingResult bindingResult) {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("login");
 
-        if(bindingResult.hasFieldErrors()){
+        if (bindingResult.hasFieldErrors("userName") || bindingResult.hasFieldErrors("password")) {
+
             modelAndView.setViewName("login");
-            logger.error("An error has occurred.");
+            logger.error(genericError);
+            modelAndView.addObject("genericError", genericError);
             return modelAndView;
         }
 
         boolean doesStudentExist = studentService.doesStudentExist(student.getUserName());
-        if (doesStudentExist){
+        modelAndView.addObject("doesStudentExist", doesStudentExist);
+        if (doesStudentExist) {
             modelAndView.setViewName("welcome");
-        } else{
+        } else {
             String userExistMessage = "Please verify you have an account with us.";
             modelAndView.setViewName("login");
-            modelAndView.addObject("userExistMessage",userExistMessage);
+            modelAndView.addObject("userExistMessage", userExistMessage);
         }
         return modelAndView;
     }
+
     @GetMapping("/displayStudents")
     public ModelAndView showAllStudents() {
-        ModelAndView view = new ModelAndView();
-        view.setViewName("students");
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("students");
         Iterable<Student> students = studentService.getAllStudents();
-        view.addObject("students", students);
-        return view;
+        modelAndView.addObject("students", students);
+        return modelAndView;
     }
 
 
