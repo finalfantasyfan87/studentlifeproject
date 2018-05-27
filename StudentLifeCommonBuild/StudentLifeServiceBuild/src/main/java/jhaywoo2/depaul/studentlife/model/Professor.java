@@ -16,7 +16,7 @@ public class Professor {
   @JoinColumn(name = "departmentId")
   private Department department;
 
-  @OneToMany(mappedBy = "professor", fetch=FetchType.LAZY)
+  @OneToMany(mappedBy = "professor", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
   private List<Course> courseList = new ArrayList<Course>();
 
   private String name;
@@ -47,10 +47,11 @@ public class Professor {
   }
 
   public List<Course> getCourseList() {
+    //if(courseList)
     return courseList;
   }
 
-  public void setCourseList(List<Course> courseList) {
+  public void setCourseList (List<Course> courseList) {
     this.courseList = courseList;
   }
 

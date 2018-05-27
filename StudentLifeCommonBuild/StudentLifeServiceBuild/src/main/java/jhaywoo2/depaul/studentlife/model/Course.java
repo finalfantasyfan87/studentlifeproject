@@ -13,7 +13,7 @@ public class Course {
     @JoinColumn(name ="departmentId")
     private Department department;
 
-    @ManyToOne
+    @ManyToOne()
     @JoinColumn(name = "professorId")
     private Professor professor;
 

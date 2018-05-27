@@ -7,7 +7,7 @@
     <tr>
         <th scope = "col">Professor</th>
         <th scope = "col">Department</th>
-        <th scope = "col">Icon</th>
+        <th scope = "col">Professor's Profile</th>
     </tr>
     </thead>
     <tbody>

@@ -1,13 +1,12 @@
 package jhaywoo2.depaul.studentlife.serviceimpl;
 
 import jhaywoo2.depaul.studentlife.model.Student;
+import jhaywoo2.depaul.studentlife.repository.StudentRepository;
 import jhaywoo2.depaul.studentlife.service.StudentService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import jhaywoo2.depaul.studentlife.repository.StudentRepository;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 @Service("studentService")
 public class StudentLifeServiceImpl implements StudentService {
@@ -26,13 +25,14 @@ public class StudentLifeServiceImpl implements StudentService {
 
     @Override
     public Student getOneStudentById(Long studentId) {
-        Student someStudent = studentRepository.findOne(studentId);
+        Student someStudent = studentRepository.getOne(studentId);
         logger.debug("Student from ServiceImpl" + someStudent);
         return someStudent;
     }
 
-    @Transactional
+
     @Override
+
     public void saveStudentToDBs(Student student) {
         logger.debug("Saving student");
         studentRepository.save(student);

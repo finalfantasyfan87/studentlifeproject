@@ -24,10 +24,10 @@ public class ProfessorController {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("professors");
         List<Professor> professors= professorService.showAllProfessors();
-        professors.forEach(professor -> {
-            logger.info("Department:" + professor.getProfessorId());
-            logger.info("Department:" + professor.getDepartment());
-        });
+//        professors.forEach(professor -> {
+//            logger.info("Department:" + professor.getProfessorId());
+//            logger.info("Department:" + professor.getDepartment());
+//        });
         modelAndView.addObject("professors", professors);
         return modelAndView;
     }
@@ -35,6 +35,7 @@ public class ProfessorController {
     @GetMapping("/rateTeacher")
     public ModelAndView showRateTeacherPage(@RequestParam("professorId") Long professorId){
         Professor profiledProfessor = professorService.findProfessorById(professorId);
+
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("rateTeacher");
         modelAndView.addObject("profiledProfessor",profiledProfessor);

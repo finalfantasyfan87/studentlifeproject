@@ -1,7 +1,7 @@
 <component name="ArtifactManager">
   <artifact type="war" name="StudentLifeWebBuild:war">
     <output-path>$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/target</output-path>
-    <root id="archive" name="StudentLife.war">
+    <root id="archive" name="MyStudentLife.war">
       <element id="artifact" artifact-name="StudentLifeWebBuild:war exploded" />
     </root>
   </artifact>
