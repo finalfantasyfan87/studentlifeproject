@@ -50,6 +50,7 @@ public class StudentController {
     @GetMapping("/login")
     public ModelAndView showLoginForm() {
         ModelAndView modelAndView = new ModelAndView("login", "student", new Student());
+        logger.debug("ViewName is "+ modelAndView.getViewName());
         modelAndView.addObject("viewName", modelAndView.getViewName());
         return modelAndView;
     }

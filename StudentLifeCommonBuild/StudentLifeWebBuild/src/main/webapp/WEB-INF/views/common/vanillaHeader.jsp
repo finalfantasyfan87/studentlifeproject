@@ -26,7 +26,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item active">
-                <c:if test = "{viewName} eq 'register'">
+                <c:if test = "${viewName eq 'register'}">
                 <a class="nav-link" href="/studentLife/register">Sign up here <span class="sr-only">(current)</span></a>
                 </c:if>
                 <a class="nav-link" href="/studentLife/login">Log in Here <span class="sr-only">(current)</span></a>

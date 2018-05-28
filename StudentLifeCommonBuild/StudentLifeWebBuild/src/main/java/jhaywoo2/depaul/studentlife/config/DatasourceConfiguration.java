@@ -75,7 +75,7 @@ public class DatasourceConfiguration {
         Properties properties = new Properties();
         properties.setProperty("jndiName", "java:/jdbc/StudentLife");
         properties.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL5Dialect");
-        properties.setProperty("spring.datasource.test-on-borrow", "true");
+        properties.setProperty("spring.datasource.testOnBorrow", "true");
         properties.setProperty("spring.datasource.validation-query", "SELECT 1");
         properties.setProperty("spring.datasource.test-while-idle", "true");
 

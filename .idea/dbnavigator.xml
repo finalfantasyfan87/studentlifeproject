@@ -22,8 +22,12 @@
   <component name="DBNavigator.Project.DatabaseBrowserManager">
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
-    <show-object-properties value="true" />
-    <loaded-nodes />
+    <show-object-properties value="false" />
+    <loaded-nodes>
+      <connection connection-id="e48ef94c-e3b9-4a9c-9e63-df69e02b4198">
+        <schema name="studentlifedb" object-types="column, constraint, function, index, procedure, table, dataset trigger, view" />
+      </connection>
+    </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="e48ef94c-e3b9-4a9c-9e63-df69e02b4198">
@@ -71,6 +75,7 @@ alter table teachers drop column updatedDate;]]></console>
         <condition column="universityId" operator="=" value="" active="true" />
       </filter>
     </filter-list>
+    <filter-list connection-id="e48ef94c-e3b9-4a9c-9e63-df69e02b4198" dataset="studentlifedb.course" active-filter-id="" />
     <filter-list connection-id="e48ef94c-e3b9-4a9c-9e63-df69e02b4198" dataset="studentlifedb.students" active-filter-id="EMPTY_FILTER" />
     <filter-list connection-id="e48ef94c-e3b9-4a9c-9e63-df69e02b4198" dataset="studentlifedb.subjects" active-filter-id="" />
     <filter-list connection-id="e48ef94c-e3b9-4a9c-9e63-df69e02b4198" dataset="studentlifedb.teachers" active-filter-id="EMPTY_FILTER">
@@ -78,6 +83,7 @@ alter table teachers drop column updatedDate;]]></console>
         <condition column="teacherId" operator="=" value="" active="true" />
       </filter>
     </filter-list>
+    <filter-list connection-id="e48ef94c-e3b9-4a9c-9e63-df69e02b4198" dataset="studentlifedb.professor" active-filter-id="EMPTY_FILTER" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />

@@ -39,74 +39,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="StudentController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/java/jhaywoo2/depaul/studentlife/controller/StudentController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="52" column="36" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StudentLifeServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeServiceBuild/src/main/java/jhaywoo2/depaul/studentlife/serviceimpl/StudentLifeServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/webapp/WEB-INF/views/common/header.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="34" column="40" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/webapp/WEB-INF/views/login.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-20">
-              <caret line="2" column="43" selection-start-line="2" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="vanillaHeader.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/webapp/WEB-INF/views/common/vanillaHeader.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="620">
-              <caret line="31" column="70" selection-start-line="31" selection-start-column="70" selection-end-line="31" selection-end-column="70" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="74" column="24" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="register.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/webapp/WEB-INF/views/register.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="rateTeacher.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/webapp/WEB-INF/views/rateTeacher.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="83">
-              <caret line="24" column="9" selection-start-line="23" selection-end-line="27" selection-end-column="14" />
+            <state relative-caret-position="320">
+              <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProfessorController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/java/jhaywoo2/depaul/studentlife/controller/ProfessorController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="31" column="28" lean-forward="true" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="welcome.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/webapp/WEB-INF/views/welcome.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="students.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/webapp/WEB-INF/views/students.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="20">
+              <caret line="1" column="29" lean-forward="true" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="professor" pinned="false" current-in-tab="false">
+        <entry file="db://e48ef94c-e3b9-4a9c-9e63-df69e02b4198/object#[schema/table][studentlifedb/professor]">
+          <provider selected="true" editor-type-id="1.DATA">
+            <state row-count="200" readonly="false">
+              <columns>
+                <column name="professorId" position="0" visible="true" />
+                <column name="departmentId" position="1" visible="true" />
+                <column name="name" position="2" visible="true" />
+                <column name="courseId" position="3" visible="true" />
+              </columns>
+              <sorting>
+                <column name="courseId" index="1" direction="ASCENDING" />
+              </sorting>
+              <content-types />
             </state>
           </provider>
         </entry>
@@ -197,13 +179,13 @@
         <option value="$PROJECT_DIR$/StudentLifeCommonBuild/pom.xml" />
         <option value="$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/java/jhaywoo2/depaul/studentlife/config/WebInit.java" />
         <option value="$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeServiceBuild/src/main/java/jhaywoo2/depaul/studentlife/model/Professor.java" />
-        <option value="$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/java/jhaywoo2/depaul/studentlife/config/DatasourceConfiguration.java" />
         <option value="$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/webapp/WEB-INF/views/common/loggedInHeader.jsp" />
         <option value="$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/webapp/WEB-INF/views/login.jsp" />
         <option value="$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/webapp/WEB-INF/views/register.jsp" />
-        <option value="$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/java/jhaywoo2/depaul/studentlife/controller/StudentController.java" />
-        <option value="$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/webapp/WEB-INF/views/common/vanillaHeader.jsp" />
         <option value="$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/pom.xml" />
+        <option value="$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/webapp/WEB-INF/views/common/vanillaHeader.jsp" />
+        <option value="$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/java/jhaywoo2/depaul/studentlife/controller/StudentController.java" />
+        <option value="$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/java/jhaywoo2/depaul/studentlife/config/DatasourceConfiguration.java" />
       </list>
     </option>
   </component>
@@ -245,7 +227,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-15" />
-    <option name="width" value="2665" />
+    <option name="width" value="3750" />
     <option name="height" value="2075" />
   </component>
   <component name="ProjectView">
@@ -277,6 +259,44 @@
               <item name="StudentLifeCommonBuild" type="462c0819:PsiDirectoryNode" />
               <item name="StudentLifeServiceBuild" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="studentlifeproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="studentlifeproject" type="462c0819:PsiDirectoryNode" />
+              <item name="StudentLifeCommonBuild" type="462c0819:PsiDirectoryNode" />
+              <item name="StudentLifeServiceBuild" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="studentlifeproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="studentlifeproject" type="462c0819:PsiDirectoryNode" />
+              <item name="StudentLifeCommonBuild" type="462c0819:PsiDirectoryNode" />
+              <item name="StudentLifeServiceBuild" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="studentlifeproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="studentlifeproject" type="462c0819:PsiDirectoryNode" />
+              <item name="StudentLifeCommonBuild" type="462c0819:PsiDirectoryNode" />
+              <item name="StudentLifeServiceBuild" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="studentlife" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="studentlifeproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="studentlifeproject" type="462c0819:PsiDirectoryNode" />
+              <item name="StudentLifeCommonBuild" type="462c0819:PsiDirectoryNode" />
+              <item name="StudentLifeServiceBuild" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="studentlife" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="studentlifeproject" type="b2602c69:ProjectViewProjectNode" />
@@ -430,15 +450,25 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="JAVA_HOME" value="C:\Program Files\Java\jdk1.8.0_172" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="cores_evosuite_param" value="1" />
+    <property name="evosuite_gui_dialog_height" value="300" />
+    <property name="evosuite_gui_dialog_width" value="570" />
+    <property name="evosuite_jar_location" value="C:\Users\final\Downloads\evosuite-1.0.6.jar" />
+    <property name="execution_mode" value="MVN" />
     <property name="last_opened_file_path" value="$USER_HOME$/eclipseworkspace/Coverage1" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="memory_evosuite_param" value="2000" />
+    <property name="mvn_location" value="" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="target_folder_evosuite_param" value="src/evo" />
+    <property name="time_evosuite_param" value="3" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -950,12 +980,12 @@
       <workItem from="1527464589338" duration="66000" />
       <workItem from="1527464713590" duration="1730000" />
       <workItem from="1527478570351" duration="7000" />
-      <workItem from="1527482511337" duration="2036000" />
+      <workItem from="1527482511337" duration="3850000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="366307000" />
+    <option name="totallyTimeSpent" value="368121000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -967,8 +997,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="0" width="1066" height="830" extended-state="0" />
-    <editor active="true" />
+    <frame x="-6" y="0" width="1500" height="830" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="DB Execution Console" order="0" sideWeight="0.49840257" weight="0.34615386" />
@@ -978,24 +1007,24 @@
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" weight="0.32905984" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="4" />
-      <window_info anchor="bottom" id="EvoSuite" order="16" />
+      <window_info active="true" anchor="bottom" id="EvoSuite" order="16" visible="true" weight="0.32905984" />
       <window_info anchor="right" id="Database" order="4" show_stripe_button="false" weight="0.32996634" />
       <window_info id="Structure" order="1" show_stripe_button="false" sideWeight="0.5068493" side_tool="true" weight="0.27345845" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" show_stripe_button="false" weight="0.25" />
       <window_info id="UI Designer" order="5" />
       <window_info anchor="bottom" id="Debug" order="4" show_stripe_button="false" weight="0.6411411" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32722145" />
-      <window_info id="DB Browser" order="0" weight="0.31761444" />
+      <window_info id="DB Browser" order="0" weight="0.23786408" />
       <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.49899396" weight="0.31766382" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
       <window_info id="Image Layers" order="6" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" show_stripe_button="false" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.7484909" visible="true" weight="0.24501425" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.7484909" weight="0.13105413" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.32722145" />
       <window_info anchor="bottom" id="Spring" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="12" show_stripe_button="false" weight="0.32882884" />
-      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49315068" visible="true" weight="0.18551587" />
+      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49315068" visible="true" weight="0.31276006" />
       <window_info anchor="right" id="Bean Validation" order="8" show_stripe_button="false" weight="0.3298722" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="right" id="CodeHelp" order="10" side_tool="true" />
@@ -1059,11 +1088,23 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.46/mysql-connector-java-5.1.46.jar!/com/mysql/jdbc/MysqlIO.class</url>
+          <line>2068</line>
+          <properties />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="21" />
+      <option name="time" value="22" />
     </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
@@ -1076,27 +1117,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Procfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeServiceBuild/src/main/java/jhaywoo2/depaul/studentlife/serviceimpl/ProfessorServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-parent/2.0.2.RELEASE/spring-boot-starter-parent-2.0.2.RELEASE.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="88" column="25" selection-start-line="88" selection-start-column="25" selection-end-line="88" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.6.RELEASE/spring-webmvc-5.0.6.RELEASE.jar!/org/springframework/web/servlet/support/AbstractAnnotationConfigDispatcherServletInitializer.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1288,14 +1308,14 @@
             <node x="" y="">org.springframework.data.jpa.repository.config.EnableJpaRepositories</node>
             <node x="" y="">org.springframework.data.jpa.repository.config.EnableJpaAuditing</node>
             <node x="" y="">org.springframework.boot.autoconfigure.SpringBootApplication</node>
-            <node x="" y="">fileset=StudentLifeWebBuild/WebInit MVC</node>
+            <node x="" y="" />
           </nodes>
           <notes />
           <edges />
           <settings layout="Hierarchic Group" zoom="1.0" x="475.0" y="118.0" />
           <SelectedNodes />
           <Categories>
-            <Category>Show filesets as groups</Category>
+            <Category />
           </Categories>
           <SCOPE>All</SCOPE>
         </state>
@@ -1322,21 +1342,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/java/jhaywoo2/depaul/studentlife/config/DatasourceConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-620">
-          <caret line="29" column="57" lean-forward="true" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="db://[StudentLifeDb]tables\studentlifedb\students" />
-    <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/webapp/WEB-INF/views/welcome.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/webapp/WEB-INF/views/common/footer.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-360" />
@@ -1346,41 +1352,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeServiceBuild/src/main/java/jhaywoo2/depaul/studentlife/serviceimpl/StudentLifeServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/webapp/WEB-INF/views/rateTeacher.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="24" column="9" selection-start-line="23" selection-end-line="27" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/webapp/WEB-INF/views/students.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="29" lean-forward="true" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/webapp/WEB-INF/views/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-20">
-          <caret line="2" column="43" selection-start-line="2" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/java/jhaywoo2/depaul/studentlife/controller/StudentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="52" column="36" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -1400,8 +1371,87 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/webapp/WEB-INF/views/common/vanillaHeader.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="31" column="70" selection-start-line="31" selection-start-column="70" selection-end-line="31" selection-end-column="70" />
+        <state relative-caret-position="200">
+          <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/webapp/WEB-INF/views/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-20">
+          <caret line="2" column="43" selection-start-line="2" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeServiceBuild/src/main/java/jhaywoo2/depaul/studentlife/serviceimpl/StudentLifeServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/java/jhaywoo2/depaul/studentlife/controller/StudentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="51" column="35" lean-forward="true" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.46/mysql-connector-java-5.1.46.jar!/com/mysql/jdbc/MysqlIO.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="2066" selection-start-line="2066" selection-end-line="2066" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/java/jhaywoo2/depaul/studentlife/config/DatasourceConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="77" column="62" selection-start-line="77" selection-start-column="62" selection-end-line="77" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="db://[StudentLifeDb]tables\studentlifedb\professor">
+      <provider selected="true" editor-type-id="1.DATA">
+        <state row-count="0" readonly="false">
+          <columns>
+            <column name="professorId" position="0" visible="true" />
+            <column name="departmentId" position="1" visible="true" />
+            <column name="name" position="2" visible="true" />
+            <column name="courseId" position="3" visible="true" />
+          </columns>
+          <sorting>
+            <column name="courseId" index="1" direction="ASCENDING" />
+          </sorting>
+          <content-types />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/webapp/WEB-INF/views/welcome.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/webapp/WEB-INF/views/students.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="29" lean-forward="true" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/webapp/WEB-INF/views/rateTeacher.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/java/jhaywoo2/depaul/studentlife/controller/ProfessorController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="31" column="28" lean-forward="true" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -1484,7 +1534,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <last-edited />
           <splitter-proportions>
             <option name="proportions">
               <list>
