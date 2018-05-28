@@ -60,7 +60,7 @@ public class Professor {
     final StringBuffer sb = new StringBuffer("Professor{");
     sb.append("professorId=").append(professorId);
     sb.append(", department=").append(department);
-//    sb.append(", courseList=").append(courseList);
+    sb.append(", courseList=").append(courseList);
     sb.append(", name='").append(name).append('\'');
     sb.append('}');
     return sb.toString();

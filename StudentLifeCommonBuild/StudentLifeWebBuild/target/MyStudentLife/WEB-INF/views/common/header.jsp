@@ -34,9 +34,6 @@
             <li class="nav-item">
                 <a class="nav-link" href="/studentLife/displayTeachers">Teachers</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/studentLife/rateTeacher">Rate My Professor</a>
-            </li>
         </ul>
     </div>
 </nav>

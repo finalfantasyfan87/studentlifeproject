@@ -78,6 +78,7 @@ alter table teachers drop column updatedDate;]]></console>
     <filter-list connection-id="e48ef94c-e3b9-4a9c-9e63-df69e02b4198" dataset="studentlifedb.course" active-filter-id="" />
     <filter-list connection-id="e48ef94c-e3b9-4a9c-9e63-df69e02b4198" dataset="studentlifedb.students" active-filter-id="EMPTY_FILTER" />
     <filter-list connection-id="e48ef94c-e3b9-4a9c-9e63-df69e02b4198" dataset="studentlifedb.subjects" active-filter-id="" />
+    <filter-list connection-id="e48ef94c-e3b9-4a9c-9e63-df69e02b4198" dataset="studentlifedb.department" active-filter-id="EMPTY_FILTER" />
     <filter-list connection-id="e48ef94c-e3b9-4a9c-9e63-df69e02b4198" dataset="studentlifedb.teachers" active-filter-id="EMPTY_FILTER">
       <filter id="2cfb9c14-0d01-4974-866b-67d624fbd1ae" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
         <condition column="teacherId" operator="=" value="" active="true" />

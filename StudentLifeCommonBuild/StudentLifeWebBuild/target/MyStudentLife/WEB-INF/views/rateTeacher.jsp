@@ -5,6 +5,7 @@
 
 <article>
     <h2><a href="singlepost.html" align="center">Rating for Professor, ${profiledProfessor.name}</a></h2>
+    <table>
     <thead>
     <tr>
         <th scope="col">Course No.</th>

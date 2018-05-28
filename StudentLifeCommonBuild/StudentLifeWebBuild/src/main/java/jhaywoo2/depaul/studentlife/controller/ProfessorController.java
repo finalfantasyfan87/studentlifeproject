@@ -38,7 +38,9 @@ public class ProfessorController {
 
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("rateTeacher");
+        logger.debug("Courses are: "+ profiledProfessor.getCourseList().size());
         modelAndView.addObject("profiledProfessor",profiledProfessor);
+
         return modelAndView;
     }
 
