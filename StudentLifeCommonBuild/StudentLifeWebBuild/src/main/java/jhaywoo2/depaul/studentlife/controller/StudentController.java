@@ -20,12 +20,14 @@ public class StudentController {
 
     @Autowired
     StudentService studentService;
-    String genericError = "An error has occurred";
+    String genericError = "An error has occurred.";
 
 
     @GetMapping("/register")
     public ModelAndView showRegistrationForm() {
-        return new ModelAndView("register", "student", new Student());
+        ModelAndView modelAndView = new ModelAndView("register", "student", new Student());
+        modelAndView.addObject("viewName", modelAndView.getViewName());
+        return modelAndView;
     }
 
     @PostMapping("/registerUser")
@@ -47,7 +49,9 @@ public class StudentController {
 
     @GetMapping("/login")
     public ModelAndView showLoginForm() {
-        return new ModelAndView("login", "student", new Student());
+        ModelAndView modelAndView = new ModelAndView("login", "student", new Student());
+        modelAndView.addObject("viewName", modelAndView.getViewName());
+        return modelAndView;
     }
 
     @PostMapping("/loginStudent")

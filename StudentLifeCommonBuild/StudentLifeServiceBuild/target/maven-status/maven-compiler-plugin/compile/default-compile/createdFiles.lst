@@ -1,0 +1,11 @@
+jhaywoo2\depaul\studentlife\model\Auditable.class
+jhaywoo2\depaul\studentlife\model\Course.class
+jhaywoo2\depaul\studentlife\repository\StudentRepository.class
+jhaywoo2\depaul\studentlife\model\Professor.class
+jhaywoo2\depaul\studentlife\model\Department.class
+jhaywoo2\depaul\studentlife\service\ProfessorService.class
+jhaywoo2\depaul\studentlife\serviceimpl\StudentLifeServiceImpl.class
+jhaywoo2\depaul\studentlife\repository\ProfessorRepository.class
+jhaywoo2\depaul\studentlife\service\StudentService.class
+jhaywoo2\depaul\studentlife\model\Student.class
+jhaywoo2\depaul\studentlife\serviceimpl\ProfessorServiceImpl.class
