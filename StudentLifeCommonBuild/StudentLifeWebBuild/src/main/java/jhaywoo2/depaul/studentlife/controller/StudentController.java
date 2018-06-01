@@ -1,5 +1,6 @@
 package jhaywoo2.depaul.studentlife.controller;
 
+import jhaywoo2.depaul.studentlife.model.Message;
 import jhaywoo2.depaul.studentlife.model.Student;
 import jhaywoo2.depaul.studentlife.service.StudentService;
 import org.apache.logging.log4j.LogManager;
@@ -51,6 +52,7 @@ public class StudentController {
     public ModelAndView showLoginForm() {
         ModelAndView modelAndView = new ModelAndView("login", "student", new Student());
         logger.debug("ViewName is "+ modelAndView.getViewName());
+        studentService.saveMessage(new Message("bob", "hi"));
         modelAndView.addObject("viewName", modelAndView.getViewName());
         return modelAndView;
     }

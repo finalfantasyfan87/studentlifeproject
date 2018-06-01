@@ -1,6 +1,8 @@
 package jhaywoo2.depaul.studentlife.serviceimpl;
 
+import jhaywoo2.depaul.studentlife.model.Message;
 import jhaywoo2.depaul.studentlife.model.Student;
+import jhaywoo2.depaul.studentlife.repository.MongoMessagesRepository;
 import jhaywoo2.depaul.studentlife.repository.StudentRepository;
 import jhaywoo2.depaul.studentlife.service.StudentService;
 import org.apache.logging.log4j.LogManager;
@@ -16,10 +18,12 @@ public class StudentLifeServiceImpl implements StudentService {
     @Autowired
     protected StudentRepository studentRepository;
 
+    @Autowired
+    protected MongoMessagesRepository mongoMessagesRepository;
+
     @Override
     public Iterable<Student> getAllStudents() {
         Iterable<Student> students = studentRepository.findAll();
-        logger.debug("Students from ServiceImpl" + students);
         return students;
     }
 
@@ -41,6 +45,11 @@ public class StudentLifeServiceImpl implements StudentService {
     @Override
     public boolean doesStudentExist(String userName) {
         return studentRepository.getNumberOfStudentsThatExist(userName) > 0;
+    }
+
+    @Override
+    public void saveMessage(Message message) {
+        mongoMessagesRepository.save(message);
     }
 
 

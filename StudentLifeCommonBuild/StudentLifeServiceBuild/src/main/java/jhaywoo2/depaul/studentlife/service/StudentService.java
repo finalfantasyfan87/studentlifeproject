@@ -1,4 +1,6 @@
 package jhaywoo2.depaul.studentlife.service;
+
+import jhaywoo2.depaul.studentlife.model.Message;
 import jhaywoo2.depaul.studentlife.model.Student;
 
 public interface StudentService {
@@ -6,4 +8,5 @@ public interface StudentService {
    Student getOneStudentById(Long studentId);
    void saveStudentToDBs(Student student);
    boolean doesStudentExist(String userName);
+   void saveMessage(Message message);
 }
