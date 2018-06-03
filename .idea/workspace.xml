@@ -78,8 +78,8 @@
       <file leaf-file-name="DatasourceConfiguration.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/java/jhaywoo2/depaul/studentlife/config/DatasourceConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="62" column="49" lean-forward="true" selection-start-line="62" selection-start-column="49" selection-end-line="62" selection-end-column="49" />
+            <state relative-caret-position="89">
+              <caret line="83" column="1" lean-forward="true" selection-start-line="83" selection-start-column="1" selection-end-line="83" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -88,7 +88,7 @@
         <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/webapp/resources/js/student.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+              <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -96,8 +96,8 @@
       <file leaf-file-name="students.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/webapp/WEB-INF/views/students.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="43" column="103" selection-start-line="43" selection-start-column="103" selection-end-line="43" selection-end-column="103" />
+            <state relative-caret-position="397">
+              <caret line="47" column="22" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="22" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
                 <element signature="e#1012#1019#1#HTML" expanded="true" />
@@ -111,7 +111,7 @@
         <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/webapp/WEB-INF/views/professors.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="97">
-              <caret line="17" column="74" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="93" />
+              <caret line="17" column="74" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="93" />
             </state>
           </provider>
         </entry>
@@ -249,8 +249,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="787" />
-    <option name="width" value="3065" />
+    <option name="x" value="1642" />
+    <option name="width" value="2213" />
     <option name="height" value="2075" />
   </component>
   <component name="ProjectView">
@@ -499,13 +499,6 @@
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="studentlifeproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="studentlifeproject" type="462c0819:PsiDirectoryNode" />
-              <item name="StudentLifeCommonBuild" type="462c0819:PsiDirectoryNode" />
-              <item name="StudentLifeWebBuild" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -567,7 +560,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Maven.deepCleanBinaries">
+  <component name="RunManager" selected="Maven.deploytoWildfly">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -1072,12 +1065,12 @@
       <workItem from="1527719085385" duration="605000" />
       <workItem from="1527829196693" duration="7792000" />
       <workItem from="1527959251571" duration="28000" />
-      <workItem from="1527959325349" duration="33095000" />
+      <workItem from="1527959325349" duration="36271000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="416637000" />
+    <option name="totallyTimeSpent" value="419813000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1089,7 +1082,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="315" y="0" width="1226" height="830" extended-state="0" />
+    <frame x="657" y="0" width="885" height="830" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -1114,10 +1107,10 @@
       <window_info anchor="bottom" id="Java Enterprise" order="10" show_stripe_button="false" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.32608697" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.6797033" visible="true" weight="0.18660969" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.6797033" visible="true" weight="0.32905984" />
       <window_info anchor="bottom" id="Spring" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="12" show_stripe_button="false" weight="0.32882884" />
-      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49315068" visible="true" weight="0.023972603" />
+      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49315068" visible="true" weight="0.033857316" />
       <window_info anchor="right" id="Bean Validation" order="8" show_stripe_button="false" weight="0.3298722" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="right" id="CodeHelp" order="10" side_tool="true" />
@@ -1486,7 +1479,7 @@
     <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/webapp/WEB-INF/views/professors.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="97">
-          <caret line="17" column="74" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="93" />
+          <caret line="17" column="74" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="93" />
         </state>
       </provider>
     </entry>
@@ -1538,14 +1531,7 @@
     <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/webapp/resources/js/student.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/java/jhaywoo2/depaul/studentlife/config/DatasourceConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="62" column="49" lean-forward="true" selection-start-line="62" selection-start-column="49" selection-end-line="62" selection-end-column="49" />
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1556,10 +1542,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/java/jhaywoo2/depaul/studentlife/config/DatasourceConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="83" column="1" lean-forward="true" selection-start-line="83" selection-start-column="1" selection-end-line="83" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/StudentLifeCommonBuild/StudentLifeWebBuild/src/main/webapp/WEB-INF/views/students.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="43" column="103" selection-start-line="43" selection-start-column="103" selection-end-line="43" selection-end-column="103" />
+        <state relative-caret-position="397">
+          <caret line="47" column="22" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="22" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
             <element signature="e#1012#1019#1#HTML" expanded="true" />
