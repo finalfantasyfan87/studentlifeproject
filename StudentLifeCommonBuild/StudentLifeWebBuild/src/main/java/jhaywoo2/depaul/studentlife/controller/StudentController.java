@@ -91,5 +91,12 @@ public class StudentController {
         return modelAndView;
     }
 
+    @GetMapping("/showMessageForm")
+    public ModelAndView showMessageForm(){
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("messageForm");
+      return modelAndView;
+    }
+
 
 }

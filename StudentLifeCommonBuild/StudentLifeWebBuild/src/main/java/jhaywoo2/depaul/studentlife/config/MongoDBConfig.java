@@ -2,30 +2,38 @@ package jhaywoo2.depaul.studentlife.config;
 
 import com.mongodb.Mongo;
 import com.mongodb.MongoClient;
-import com.mongodb.MongoCredential;
-import com.mongodb.ServerAddress;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.mongodb.config.AbstractMongoConfiguration;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
-import static java.util.Collections.singletonList;
+import javax.annotation.Resource;
 
 @Configuration
 @EnableMongoRepositories(basePackages = "jhaywoo2.depaul.studentlife.repository")
 public class MongoDBConfig extends AbstractMongoConfiguration {
+
+    // JBoss
+    @Resource(lookup = "java:global/MyMongoClient")
+    private MongoClient mongoClient;
+
+
     @Override
     protected String getDatabaseName() {
-        return "messages1";
+
+        return mongoClient.getDatabase("messages1").getName();
     }
 
     @Override
     @Bean
     public Mongo mongo() throws Exception {
-        //removing credentials until i figure out to do a system resource with wildfly
-        //i am also do this with heroku...will figure out
-        return new MongoClient(singletonList(new ServerAddress("den1.mongo1.gear.host", 27001)),
-                singletonList(MongoCredential.createCredential("", "", "".toCharArray())));
+//        MongoCredential mongoDBCredential = mongoClient.getCredentialsList().get(0);
+//        String user =   mongoDBCredential.getUserName();
+//        char[] mongoDBPassword = mongoDBCredential.getPassword();
+//        return new MongoClient(singletonList(new ServerAddress(mongoClient.getAddress().getHost())),
+//                singletonList(MongoCredential.createCredential(user, getDatabaseName(), mongoDBPassword)));
+
+        return mongoClient;
     }
 }
 //make a message controller, when user clicks on icon

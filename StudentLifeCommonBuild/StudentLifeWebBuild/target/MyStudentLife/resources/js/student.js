@@ -1,3 +1,0 @@
-$(function() {
-    $('#students').DataTable();
-});

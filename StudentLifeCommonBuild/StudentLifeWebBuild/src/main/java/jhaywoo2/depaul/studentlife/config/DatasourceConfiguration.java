@@ -71,16 +71,14 @@ public class DatasourceConfiguration {
         return new PersistenceExceptionTranslationPostProcessor();
     }
 
-    Properties databaseProperties() {
+   public Properties databaseProperties() {
         Properties properties = new Properties();
         properties.setProperty("jndiName", "java:/jdbc/StudentLife");
         properties.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL5Dialect");
-        properties.setProperty("spring.datasource.testOnBorrow", "true");
-        properties.setProperty("spring.datasource.validation-query", "SELECT 1");
-        properties.setProperty("spring.datasource.test-while-idle", "true");
-
-        properties.setProperty("spring.datasource.time-between-eviction-runs-millis", "60000");
-//        properties.setProperty("spring.jpa.database", "MYSQL");
+        properties.setProperty("spring.datasource.testWhileIdle", "true");
+        properties.setProperty("spring.datasource.validationQuery", "SELECT 1");
+        properties.setProperty("spring.datasource.timeBetweenEvictionRunsMillis", "60000");
+        properties.setProperty("spring.jpa.database", "MYSQL");
         return properties;
     }
 }

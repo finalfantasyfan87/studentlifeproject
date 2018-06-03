@@ -1,4 +1,0 @@
-$(function() {
-        $('#professors').DataTable();
-    });
-

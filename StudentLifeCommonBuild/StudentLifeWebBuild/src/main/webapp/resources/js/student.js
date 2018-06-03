@@ -1,3 +1,8 @@
 $(function() {
-    $('#students').DataTable();
+    $('#students').DataTable({
+
+    });
+    $('tr i').click(function(){
+        $('#myModal').modal('show');
+    });
 });
