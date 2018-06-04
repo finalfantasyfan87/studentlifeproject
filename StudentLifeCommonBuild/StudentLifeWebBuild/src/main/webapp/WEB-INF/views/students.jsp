@@ -1,8 +1,9 @@
-
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <jsp:include page="common/header.jsp" />
 <body>
+<p>Welcome, ${student.userName}</p>
+
 <h2 class="form-signin-heading"align="center">Students</h2>
 <table id ="students" class="table table-striped table-bordered" style="width:50%">
   <thead>

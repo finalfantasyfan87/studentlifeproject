@@ -43,7 +43,7 @@ public class StudentController {
             return modelAndView;
         }
         studentService.saveStudentToDBs(student);
-        modelAndView.setViewName("welcome");
+        modelAndView.setViewName("students");
         return modelAndView;
     }
 
@@ -62,6 +62,7 @@ public class StudentController {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("login");
 
+
         if (bindingResult.hasFieldErrors("userName") || bindingResult.hasFieldErrors("password")) {
 
             modelAndView.setViewName("login");
@@ -73,7 +74,9 @@ public class StudentController {
         boolean doesStudentExist = studentService.doesStudentExist(student.getUserName());
         modelAndView.addObject("doesStudentExist", doesStudentExist);
         if (doesStudentExist) {
-            modelAndView.setViewName("welcome");
+            StudentMessage studentMessage = new StudentMessage();
+            modelAndView.addObject("message",studentMessage);
+            modelAndView.setViewName("students");
         } else {
             String userExistMessage = "Please verify you have an account with us.";
             modelAndView.setViewName("login");

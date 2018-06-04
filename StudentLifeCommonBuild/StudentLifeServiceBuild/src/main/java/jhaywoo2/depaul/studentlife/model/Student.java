@@ -11,7 +11,7 @@ import java.util.Date;
 @Table(name = "students")
 public class Student extends Auditable {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long studentId;
 
     @NotBlank(message = "Please enter email!")

@@ -4,7 +4,7 @@
 <body>
 
 <article>
-    <h2><a href="singlepost.html" align="center">Rating for Professor, ${profiledProfessor.name}</a></h2>
+    <h2><a href="singlepost.html" align="center">Feedback for Professor, ${profiledProfessor.name}</a></h2>
     <table>
     <thead>
     <tr>
@@ -21,21 +21,15 @@
     </c:forEach>
     </tbody>
     </table>
-
+<br>
     <div class="row">
         <div class="group1 col-sm-6 col-md-6">
-            <span class="glyphicon glyphicon-folder-open"></span> <a href="#">Rate</a>
-            <span class="glyphicon glyphicon-bookmark"></span> <a href="#">Message</a>
-        </div>
-        <div class="group2 col-sm-6 col-md-6">
-            <span class="glyphicon glyphicon-pencil"></span> <a href="singlepost.html#comments">20 Comments</a>
-            <span class="glyphicon glyphicon-time"></span> May 16, 2018 9:00 PM
+            <i class="far fa-envelope"></i> <a href="#">Send Message</a>
         </div>
     </div>
 
     <hr>
-    <textarea rows="4" cols="50">
-</textarea>
+    <textarea rows="4" cols="50" id = "comment"></textarea>
 
     <br/>
 
@@ -44,8 +38,8 @@
     <p></p>
 
     <p class="text-right">
-        <a href="singlepost.html" class="text-right">
-            continue reading...
+        <a href="/studentLife/displayTeachers" class="text-right">
+            Back To List of Professors
         </a>
     </p>
 

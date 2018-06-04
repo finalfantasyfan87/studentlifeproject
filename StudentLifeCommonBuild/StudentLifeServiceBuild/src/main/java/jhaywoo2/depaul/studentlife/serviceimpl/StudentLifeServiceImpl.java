@@ -39,8 +39,7 @@ public class StudentLifeServiceImpl implements StudentService {
 
     public void saveStudentToDBs(Student student) {
         logger.debug("Saving student");
-        studentRepository.save(student);
-    }
+     }
 
     @Override
     public boolean doesStudentExist(String userName) {
