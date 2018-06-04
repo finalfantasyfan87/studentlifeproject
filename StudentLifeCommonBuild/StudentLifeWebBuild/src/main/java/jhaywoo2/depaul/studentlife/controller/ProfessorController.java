@@ -24,10 +24,6 @@ public class ProfessorController {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("professors");
         List<Professor> professors= professorService.showAllProfessors();
-//        professors.forEach(professor -> {
-//            logger.info("Department:" + professor.getProfessorId());
-//            logger.info("Department:" + professor.getDepartment());
-//        });
         modelAndView.addObject("professors", professors);
         return modelAndView;
     }

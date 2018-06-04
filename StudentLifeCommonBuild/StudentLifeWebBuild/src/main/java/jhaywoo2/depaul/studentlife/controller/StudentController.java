@@ -11,6 +11,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.validation.Valid;
@@ -52,7 +53,7 @@ public class StudentController {
     public ModelAndView showLoginForm() {
         ModelAndView modelAndView = new ModelAndView("login", "student", new Student());
         logger.debug("ViewName is "+ modelAndView.getViewName());
-        studentService.saveMessage(new Message("bob", "hi"));
+
         modelAndView.addObject("viewName", modelAndView.getViewName());
         return modelAndView;
     }
@@ -91,11 +92,12 @@ public class StudentController {
         return modelAndView;
     }
 
-    @GetMapping("/showMessageForm")
-    public ModelAndView showMessageForm(){
-        ModelAndView modelAndView = new ModelAndView();
-        modelAndView.setViewName("messageForm");
-      return modelAndView;
+    @PostMapping("/sendMessage")
+    public Message sendMessage(@RequestParam("username")String username,
+    @RequestParam("messageBody") String messageBody){
+       Message studentMessage = new Message();
+        studentService.saveMessage(new Message(username, messageBody));
+      return studentMessage;
     }
 
 

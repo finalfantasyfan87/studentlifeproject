@@ -37,14 +37,14 @@
             <div class="modal-body" style="padding:40px 50px;">
                 <form role="form">
                     <div class="form-group">
-                        <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
-                        <input type="text" class="form-control" id="usrname" placeholder="Enter UserName">
+                        <label for="username"><span class="glyphicon glyphicon-user"></span> Username</label>
+                        <input type="text" class="form-control" id="username" placeholder="Enter Username">
                     </div>
                     <div class="form-group">
-                        <label for="message"><span class="glyphicon glyphicon-eye-open"></span> Message</label>
-                        <textarea type="text" class="form-control" id="message" rows="6"></textarea>
+                        <label for="messageBody"><span class="glyphicon glyphicon-eye-open"></span> Message</label>
+                        <textarea type="text" class="form-control" id="messageBody" rows="4"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-success btn-block"> Send</button>
+                    <button type="submit" class="btn btn-success btn-block" id = "sendMessageButton"> Send</button>
                 </form>
             </div>
             <div class="modal-footer">

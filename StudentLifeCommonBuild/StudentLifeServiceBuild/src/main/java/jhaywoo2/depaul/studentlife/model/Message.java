@@ -2,7 +2,7 @@ package jhaywoo2.depaul.studentlife.model;
 
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection = "messages1")
+@Document(collection = "messages")
 public class Message {
 private String messageId;
 private String userName;
