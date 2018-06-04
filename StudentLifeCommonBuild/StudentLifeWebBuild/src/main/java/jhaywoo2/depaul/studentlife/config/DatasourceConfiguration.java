@@ -75,10 +75,11 @@ public class DatasourceConfiguration {
         Properties properties = new Properties();
         properties.setProperty("jndiName", "java:/jdbc/StudentLife");
         properties.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL5Dialect");
-        properties.setProperty("spring.datasource.testWhileIdle", "true");
-        properties.setProperty("spring.datasource.validationQuery", "SELECT 1");
-        properties.setProperty("spring.datasource.timeBetweenEvictionRunsMillis", "63600000");
-        properties.setProperty("hibernate.c3p0.testConnectionOnCheckout", "true");
+        //properties.setProperty("spring.datasource.testWhileIdle", "true");
+        properties.setProperty("c3p0.preferredTestQuery", "SELECT 1");
+       properties.setProperty("c3p0.maxIdleTime", "10");
+        //properties.setProperty("spring.datasource.timeBetweenEvictionRunsMillis", "63600000");
+        properties.setProperty("c3p0.testConnectionOnCheckout", "true");
        return properties;
     }
 }

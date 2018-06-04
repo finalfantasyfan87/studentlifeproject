@@ -13,7 +13,7 @@ $(function() {
             success : function(response) {
 
                 if(response.status !== 200) {
-                   alert("An error has occurred!");
+                    console.log("An error has occurred!");
                 } else {
                     window.location.reload();
                 }

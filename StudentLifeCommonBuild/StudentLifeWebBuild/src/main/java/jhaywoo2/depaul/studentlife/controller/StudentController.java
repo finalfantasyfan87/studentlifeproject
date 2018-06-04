@@ -11,8 +11,10 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.servlet.ModelAndView;
+        import org.springframework.web.bind.annotation.RequestParam;
+        import org.springframework.web.servlet.ModelAndView;
 import javax.validation.Valid;
+        import java.util.List;
 
 @Controller
 public class StudentController {
@@ -94,6 +96,17 @@ public class StudentController {
         Iterable<Student> students = studentService.getAllStudents();
         modelAndView.addObject("message",studentMessage);
         modelAndView.addObject("students", students);
+        return modelAndView;
+    }
+
+    @GetMapping("/getListOfMessages")
+
+    public ModelAndView getListMessages(@RequestParam("userName") String userName){
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("students");
+        List<StudentMessage> messages = studentService.displayAllMessages(userName);
+        logger.debug("Messages for: " +messages);
+        modelAndView.addObject("studentMessages",messages);
         return modelAndView;
     }
 

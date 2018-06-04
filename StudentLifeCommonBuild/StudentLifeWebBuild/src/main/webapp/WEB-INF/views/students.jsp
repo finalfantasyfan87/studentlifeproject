@@ -1,7 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <jsp:include page="common/header.jsp" />
-<body>
+<input type = "hidden" id = "userName" value = "${student.userName}"/>
 <p>Welcome, ${student.userName}</p>
 
 <h2 class="form-signin-heading"align="center">Students</h2>
@@ -27,6 +27,5 @@
 
 
 <jsp:include page="sendMessageForm.jsp"/>
-</body>
+
 <jsp:include page="common/footer.jsp" />
-</html>

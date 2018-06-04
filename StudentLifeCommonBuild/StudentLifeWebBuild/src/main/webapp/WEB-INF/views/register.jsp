@@ -1,7 +1,5 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <jsp:include page="common/vanillaHeader.jsp"/>
-
-<body>
 <br>
 <br>
 <div class="container">
@@ -34,6 +32,4 @@
     <span>${genericError}</span>
 </div>
 
-</body>
 <jsp:include page="common/footer.jsp" />
-</html>

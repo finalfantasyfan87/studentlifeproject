@@ -2,7 +2,7 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <jsp:include page="common/header.jsp"/>
 <input type = "hidden" value = "rateTeacherPage"/>
-<body>
+
 <input type = "hidden" value="${profiledProfessor.professorId}" id = "professorId">
 
 <article>
@@ -51,6 +51,5 @@
     <hr>
 </article>
 
-</body>
 <jsp:include page="common/footer.jsp"/>
-</html>
+

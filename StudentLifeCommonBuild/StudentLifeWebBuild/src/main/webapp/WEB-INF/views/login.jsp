@@ -1,7 +1,7 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <jsp:include page="common/vanillaHeader.jsp"/>
-<body>
+
 <div class="container">
     <form:form action="loginStudent" method="post" modelAttribute="student" class="form-signin">
         <h2 class="form-signin-heading">Login to MyStudentLife</h2>
@@ -30,7 +30,5 @@
             </div>
         </div>
 </div>
-
-</body>
 <jsp:include page="common/footer.jsp"/>
-</html>
+
