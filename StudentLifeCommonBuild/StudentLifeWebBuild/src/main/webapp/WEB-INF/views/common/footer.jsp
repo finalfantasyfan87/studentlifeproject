@@ -1,5 +1,4 @@
 
-<body>
 
 <!-- +++++ Footer Section +++++ -->
 <br>

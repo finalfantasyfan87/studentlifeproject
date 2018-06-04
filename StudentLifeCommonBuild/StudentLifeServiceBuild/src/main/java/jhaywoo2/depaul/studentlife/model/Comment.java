@@ -2,8 +2,11 @@ package jhaywoo2.depaul.studentlife.model;
 
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import javax.persistence.Id;
+
 @Document(collection = "comments")
 public class Comment {
+    @Id
     String commentId;
     String professorId;
     String comment;
@@ -11,12 +14,10 @@ public class Comment {
     public Comment() {
     }
 
-    public Comment(String commentId, String professorId, String comment) {
-        this.commentId = commentId;
+    public Comment(String professorId, String comment) {
         this.professorId = professorId;
         this.comment = comment;
     }
-
 
     public String getCommentId() {
         return commentId;

@@ -8,7 +8,7 @@
 
         <div class="form-group row">
             <label for="userName" class="col-sm-2 col-form-label">Username</label>
-            <form:input type="input" path="userName" class="col-sm-4" placeholder="messageRecipient"
+            <form:input type="text" path="userName" class="col-sm-4" placeholder="username"
                         autofocus="true"></form:input>
             <form:errors path="userName" element="div" class="has-error"></form:errors>
         </div>

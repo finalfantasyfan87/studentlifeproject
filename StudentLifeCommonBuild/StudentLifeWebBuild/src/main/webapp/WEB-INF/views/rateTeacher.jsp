@@ -1,7 +1,9 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <jsp:include page="common/header.jsp"/>
 <input type = "hidden" value = "rateTeacherPage"/>
 <body>
+<input type = "hidden" value="${profiledProfessor.professorId}" id = "professorId">
 
 <article>
     <h2><a href="singlepost.html" align="center">Feedback for Professor, ${profiledProfessor.name}</a></h2>
@@ -29,10 +31,13 @@
     </div>
 
     <hr>
-    <textarea rows="4" cols="50" id = "comment"></textarea>
+    <form:form method = "POST" action = "saveComment" modelAttribute="professorComment">
+    <form:textarea rows="4" cols="50" id = "commentFeedBack" path = "comment"></form:textarea>
 
     <br/>
 
+        <button type="submit" class="btn btn-lg btn-primary" id = "submitCommentButton"> Submit Feedback</button>
+    </form:form>
     <p class="lead"> </p>
 
     <p></p>

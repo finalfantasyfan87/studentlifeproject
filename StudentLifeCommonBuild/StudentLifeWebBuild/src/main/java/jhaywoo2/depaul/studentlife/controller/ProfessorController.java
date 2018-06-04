@@ -1,5 +1,6 @@
 package jhaywoo2.depaul.studentlife.controller;
 
+import jhaywoo2.depaul.studentlife.model.Comment;
 import jhaywoo2.depaul.studentlife.model.Professor;
 import jhaywoo2.depaul.studentlife.service.ProfessorService;
 import org.apache.logging.log4j.LogManager;
@@ -34,8 +35,10 @@ public class ProfessorController {
 
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("rateTeacher");
+        Comment professorComment = new Comment();
         logger.debug("Courses are: "+ profiledProfessor.getCourseList().size());
         modelAndView.addObject("profiledProfessor",profiledProfessor);
+        modelAndView.addObject("professorComment",professorComment);
 
         return modelAndView;
     }

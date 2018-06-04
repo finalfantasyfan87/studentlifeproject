@@ -1,4 +1,9 @@
 $(function() {
-        $('#professors').DataTable();
+        $('#professors').DataTable({
+
+            "bDestroy": true
+
+            });
+
     });
 

@@ -10,6 +10,8 @@ import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service("studentService")
 public class StudentLifeServiceImpl implements StudentService {
 
@@ -49,6 +51,11 @@ public class StudentLifeServiceImpl implements StudentService {
     @Override
     public void saveMessage(StudentMessage message) {
         mongoMessagesRepository.save(message);
+    }
+
+    @Override
+    public List<StudentMessage> displayAllMessages(String messageRecipient) {
+        return mongoMessagesRepository.findAllByMessageRecipient(messageRecipient);
     }
 
 

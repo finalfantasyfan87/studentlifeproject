@@ -16,6 +16,7 @@
     <script src="https://cdn.datatables.net/v/dt/dt-1.10.16/datatables.min.js"></script>
     <script src="<c:url value="/resources/js/teacher.js"/>"></script>
     <script src="<c:url value="/resources/js/student.js"/>"></script>
+    <script src="<c:url value="/resources/js/rateTeacher.js"/>"></script>
 </head>
 
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#e1bee7;">

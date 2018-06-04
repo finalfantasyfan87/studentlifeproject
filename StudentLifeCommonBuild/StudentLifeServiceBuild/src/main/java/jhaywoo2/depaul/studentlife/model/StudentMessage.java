@@ -1,6 +1,5 @@
 package jhaywoo2.depaul.studentlife.model;
 
-import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import javax.persistence.Id;
@@ -10,10 +9,9 @@ public class StudentMessage {
     @Id
 private String messageId;
 
-    @NotEmpty(message="Username cannot be empty!")
+
 private String messageRecipient;
 
-    @NotEmpty(message="Password cannot be empty!")
 private String message;
 
         public StudentMessage() {
