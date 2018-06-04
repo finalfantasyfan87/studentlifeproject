@@ -1,46 +1,60 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <jsp:include page="common/header.jsp"/>
-<input type = "hidden" value = "rateTeacherPage"/>
+<input type="hidden" value="rateTeacherPage"/>
 
-<input type = "hidden" value="${profiledProfessor.professorId}" id = "professorId">
+<input type="hidden" value="${profiledProfessor.professorId}" id="professorId">
 
 <article>
-    <h2><a href="singlepost.html" align="center">Feedback for Professor, ${profiledProfessor.name}</a></h2>
+    <h2 class="form-signin-heading" align="center">Feedback for Professor: ${profiledProfessor.name}</h2>
     <table>
-    <thead>
-    <tr>
-        <th scope="col">Course No.</th>
-        <th scope="col">Course Title</th>
-    </tr>
-    </thead>
-    <tbody>
-    <c:forEach items="${profiledProfessor.courseList}" var="course" varStatus="status">
+        <thead>
         <tr>
-            <td>${course.courseNo}</td>
-            <td>${course.title}</td>
+            <th scope="col">Course No.</th>
+            <th scope="col">Course Title</th>
         </tr>
-    </c:forEach>
-    </tbody>
+        </thead>
+        <tbody>
+        <c:forEach items="${profiledProfessor.courseList}" var="course" varStatus="status">
+            <tr>
+                <td>${course.courseNo}</td>
+                <td>${course.title}</td>
+            </tr>
+        </c:forEach>
+        </tbody>
     </table>
-<br>
+    <br>
     <div class="row">
-        <div class="group1 col-sm-6 col-md-6">
-            <i class="far fa-envelope"></i> <a href="#">Send Message</a>
+        <div class="center col-sm-6 col-md-6">
+            <form:form method="POST" action="saveComment" modelAttribute="professorComment">
+                <form:textarea rows="4" cols="50" id="commentFeedBack" path="comment"></form:textarea>
+
+                <br/>
+
+                <button type="submit" class="btn btn-lg btn-primary" id="submitCommentButton"> Submit Feedback</button>
+            </form:form>
         </div>
     </div>
 
     <hr>
-    <form:form method = "POST" action = "saveComment" modelAttribute="professorComment">
-    <form:textarea rows="4" cols="50" id = "commentFeedBack" path = "comment"></form:textarea>
 
-    <br/>
+    <h2 class="form-signin-heading" align="center">Teacher Comments</h2>
+    <table id="professorComments" class="table table-striped table-bordered" style="width:50%">
+        <thead>
+        <tr>
 
-        <button type="submit" class="btn btn-lg btn-primary" id = "submitCommentButton"> Submit Feedback</button>
-    </form:form>
-    <p class="lead"> </p>
+            <th scope="col">Comments</th>
 
-    <p></p>
+        </tr>
+        </thead>
+        <tbody>
+        <c:forEach items="${professorComments}" var="professorComment" varStatus="status">
+            <tr>
+                <td>${professorComment.comment}</td>
+            </tr>
+        </c:forEach>
+        </tbody>
+    </table>
 
     <p class="text-right">
         <a href="/studentLife/displayTeachers" class="text-right">

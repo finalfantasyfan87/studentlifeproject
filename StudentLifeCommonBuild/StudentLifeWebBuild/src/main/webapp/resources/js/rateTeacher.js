@@ -1,5 +1,7 @@
 $(function() {
 
+    $('#professorComments').dataTable( {
+    } );
     $('#submitCommentButton').click(function (event) {
         event.preventDefault();
         var professorId = $('#professorId').val();

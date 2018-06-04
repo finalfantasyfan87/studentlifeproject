@@ -36,12 +36,11 @@ public class ProfessorController {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("rateTeacher");
         Comment professorComment = new Comment();
+        List<Comment> professorComments = professorService.findAllCommensForProfessor(professorId.toString());
         logger.debug("Courses are: "+ profiledProfessor.getCourseList().size());
         modelAndView.addObject("profiledProfessor",profiledProfessor);
         modelAndView.addObject("professorComment",professorComment);
-
-        
-
+        modelAndView.addObject("professorComments",professorComments);
         return modelAndView;
     }
 

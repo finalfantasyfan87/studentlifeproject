@@ -35,4 +35,11 @@ public class ProfessorServiceImpl implements ProfessorService {
         mongoCommentRepository.save(comment);
 
     }
+
+    @Override
+    public List<Comment> findAllCommensForProfessor(String professorId) {
+        return mongoCommentRepository.findAllByProfessorId(professorId);
+    }
+
+
 }

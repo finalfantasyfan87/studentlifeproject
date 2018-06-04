@@ -9,4 +9,6 @@ public interface ProfessorService {
     Professor findProfessorById(Long id);
 List<Professor> showAllProfessors();
 void saveTeacherComment(Comment professorFeedBack);
+List<Comment> findAllCommensForProfessor(String professorId);
+
 }
