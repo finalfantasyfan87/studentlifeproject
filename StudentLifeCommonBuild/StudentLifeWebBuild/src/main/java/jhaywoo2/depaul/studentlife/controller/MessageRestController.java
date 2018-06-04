@@ -1,13 +1,13 @@
 package jhaywoo2.depaul.studentlife.controller;
 
-        import jhaywoo2.depaul.studentlife.model.StudentMessage;
-        import jhaywoo2.depaul.studentlife.service.StudentService;
-        import org.springframework.beans.factory.annotation.Autowired;
-        import org.springframework.validation.BindingResult;
-        import org.springframework.web.bind.annotation.ModelAttribute;
-        import org.springframework.web.bind.annotation.PostMapping;
-        import org.springframework.web.bind.annotation.RequestParam;
-        import org.springframework.web.bind.annotation.RestController;
+import jhaywoo2.depaul.studentlife.model.StudentMessage;
+import jhaywoo2.depaul.studentlife.service.StudentService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class MessageRestController{

@@ -15,12 +15,8 @@
             <div class="modal-body" style="padding:40px 50px;">
                 <form:form method ="POST" action = "sendMessage" modelAttribute="message" role="form">
                     <div class="form-group">
-                        <label for="messageRecipient"><span class="glyphicon glyphicon-user"></span> Username</label>
-                        <form:input type="text" class="form-control" path = "messageRecipient" id="messageRecipient" placeholder="Enter Username"></form:input>
-                    </div>
-                    <div class="form-group">
                         <label for="messageBody"><span class="glyphicon glyphicon-eye-open"></span> Message</label>
-                        <textarea type="text" class="form-control" path = "message" id="messageBody" rows="4"></textarea>
+                        <textarea type="text" class="form-control" path = "message" id="messageBody" rows="4" required = true></textarea>
                     </div>
                     <button type="submit" class="btn btn-success btn-block" id = "sendMessageButton"> Send</button>
                 </form:form>
