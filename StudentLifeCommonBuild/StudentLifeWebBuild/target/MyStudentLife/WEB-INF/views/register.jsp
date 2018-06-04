@@ -15,10 +15,10 @@
             <form:errors path="email" element = "div" cssClass="error"></form:errors>
         </div>
         <div class="form-group row">
-            <label for="messageRecipient" class="col-sm-2 col-form-label">UserName</label>
-            <form:input type="messageRecipient" path="messageRecipient" class="col-sm-4" placeholder="messageRecipient"
+            <label for="userName" class="col-sm-2 col-form-label">UserName</label>
+            <form:input type="messageRecipient" path="userName" class="col-sm-4" placeholder="messageRecipient"
                         autofocus="true"></form:input>
-            <form:errors path="messageRecipient" element = "div" cssClass="error"></form:errors>
+            <form:errors path="userName" element = "div" cssClass="error"></form:errors>
         </div>
         <div class= "form-group row">
             <label for="password" class="col-sm-2 col-form-label">Password</label>

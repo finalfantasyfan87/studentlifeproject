@@ -1,6 +1,6 @@
 <jsp:include page="common/header.jsp" />
 <body>
-<p>Welcome, ${student.messageRecipient}</p>
+<p>Welcome, ${student.userName}</p>
 
 </body>
 <jsp:include page="common/header.jsp" />
