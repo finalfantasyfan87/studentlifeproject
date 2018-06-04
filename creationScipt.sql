@@ -90,7 +90,7 @@ create table students
   email       varchar(100) not null,
   password    varchar(8)   not null,
   createdDate date         null,
-  userName    varchar(20)  not null,
+  messageRecipient    varchar(20)  not null,
   courseId    int          null,
   constraint students_course_courseId_fk
   foreign key (courseId) references course (courseId)

@@ -53,7 +53,7 @@ public class DatasourceConfiguration {
 //
 //        BasicDataSource basicDataSource = new BasicDataSource();
 //        basicDataSource.setUrl(dbUrl);
-//        basicDataSource.setUsername(username);
+//        basicDataSource.setMessageRecipient(username);
 //        basicDataSource.setPassword(password);
 //
 //        return basicDataSource;

@@ -10,22 +10,21 @@ $(function() {
 
         $('#sendMessageButton').click(function (event) {
             event.preventDefault();
-            var username = $('#username').val();
-            var messageBody = $('#message').val();
-            alert(username + "" + messageBody);
+            var messageRecipient= $('#messageRecipient').val();
+            var messageBody = $('#messageBody').val();
 
             $.ajax({
 
                 url : "/studentLife/sendMessage",
                 type : "POST",
-                data: "username=" + username + "&messageBody=" + messageBody,
+                data: "messageRecipient=" + messageRecipient + "&messageBody=" + messageBody,
                 success : function(response) {
 
                     if(response.status == 'FAIL') {
                         showFormError(response.errorMessageList);
                     } else {
                         //everything is O.K. user logged in successfully.
-                        $('#exampleModal').modal('hide');
+                        $('#myModal').modal('hide');
                         window.location.reload();
                     }
                 },

@@ -1,5 +1,6 @@
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <jsp:include page="common/header.jsp" />
 <body>
 <h2 class="form-signin-heading"align="center">Students</h2>
@@ -24,35 +25,7 @@
 </table>
 
 
-<!-- Modal -->
-<div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-
-        <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header" style="padding:35px 50px;">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4><span class="glyphicon glyphicon-lock"></span> Close</h4>
-            </div>
-            <div class="modal-body" style="padding:40px 50px;">
-                <form role="form">
-                    <div class="form-group">
-                        <label for="username"><span class="glyphicon glyphicon-user"></span> Username</label>
-                        <input type="text" class="form-control" id="username" placeholder="Enter Username">
-                    </div>
-                    <div class="form-group">
-                        <label for="messageBody"><span class="glyphicon glyphicon-eye-open"></span> Message</label>
-                        <textarea type="text" class="form-control" id="messageBody" rows="4"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-success btn-block" id = "sendMessageButton"> Send</button>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
-            </div>
-        </div>
-    </div>
-</div>
+<jsp:include page="sendMessageForm.jsp"/>
 </body>
 <jsp:include page="common/footer.jsp" />
 </html>

@@ -1,6 +1,6 @@
 package jhaywoo2.depaul.studentlife.serviceimpl;
 
-import jhaywoo2.depaul.studentlife.model.Message;
+import jhaywoo2.depaul.studentlife.model.StudentMessage;
 import jhaywoo2.depaul.studentlife.model.Student;
 import jhaywoo2.depaul.studentlife.repository.MongoMessagesRepository;
 import jhaywoo2.depaul.studentlife.repository.StudentRepository;
@@ -48,7 +48,7 @@ public class StudentLifeServiceImpl implements StudentService {
     }
 
     @Override
-    public void saveMessage(Message message) {
+    public void saveMessage(StudentMessage message) {
         mongoMessagesRepository.save(message);
     }
 

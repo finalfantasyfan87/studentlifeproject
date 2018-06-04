@@ -28,7 +28,7 @@ public class MongoDBConfig extends AbstractMongoConfiguration {
     @Bean
     public Mongo mongo() throws Exception {
 //        MongoCredential mongoDBCredential = mongoClient.getCredentialsList().get(0);
-//        String user =   mongoDBCredential.getUserName();
+//        String user =   mongoDBCredential.getMessageRecipient();
 //        char[] mongoDBPassword = mongoDBCredential.getPassword();
 //        return new MongoClient(singletonList(new ServerAddress(mongoClient.getAddress().getHost())),
 //                singletonList(MongoCredential.createCredential(user, getDatabaseName(), mongoDBPassword)));

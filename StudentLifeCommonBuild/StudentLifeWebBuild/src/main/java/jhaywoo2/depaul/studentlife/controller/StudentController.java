@@ -1,8 +1,8 @@
 package jhaywoo2.depaul.studentlife.controller;
 
-import jhaywoo2.depaul.studentlife.model.Message;
-import jhaywoo2.depaul.studentlife.model.Student;
-import jhaywoo2.depaul.studentlife.service.StudentService;
+        import jhaywoo2.depaul.studentlife.model.Student;
+        import jhaywoo2.depaul.studentlife.model.StudentMessage;
+        import jhaywoo2.depaul.studentlife.service.StudentService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +11,6 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.validation.Valid;
@@ -87,18 +86,11 @@ public class StudentController {
     public ModelAndView showAllStudents() {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("students");
+        StudentMessage studentMessage = new StudentMessage();
         Iterable<Student> students = studentService.getAllStudents();
+        modelAndView.addObject("message",studentMessage);
         modelAndView.addObject("students", students);
         return modelAndView;
     }
-
-    @PostMapping("/sendMessage")
-    public Message sendMessage(@RequestParam("username")String username,
-    @RequestParam("messageBody") String messageBody){
-       Message studentMessage = new Message();
-        studentService.saveMessage(new Message(username, messageBody));
-      return studentMessage;
-    }
-
 
 }
