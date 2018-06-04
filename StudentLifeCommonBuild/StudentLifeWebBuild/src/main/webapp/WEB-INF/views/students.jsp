@@ -24,22 +24,19 @@
     </c:forEach>
     </tbody>
 </table>
-
+<hr>
+<h2 class="form-signin-heading"align="center">Student Messages</h2>
 <table id ="messages" class="table table-striped table-bordered" style="width:50%">
     <thead>
     <tr>
-        <th scope="col">MessageId</th>
-        <th scope="col">Recipient</th>
-        <th scope="col">Message</th>
+        <th scope="col">Your Messages</th>
 
     </tr>
     </thead>
     <tbody>
-    <c:forEach items="${messages}" var="message" varStatus="status">
+    <c:forEach items="${studentMessages}" var="studentMessage" varStatus="status">
         <tr>
-            <td>${message.messageId}</td>
-            <td>${message.messageRecipient}</td>
-            <td>${message.message}</td>
+            <td>${studentMessage.message}</td>
         </tr>
     </c:forEach>
     </tbody>

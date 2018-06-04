@@ -11,19 +11,8 @@ $(function() {
             type : "POST",
             data: "professorId=" + professorId + "&comment=" + comment,
             success : function(response) {
-
-                if(response.status !== 200) {
-                    console.log("An error has occurred!");
-                } else {
                     window.location.reload();
                 }
-            },
-            error : function(ex) {
-                console.log(ex);
-            }
+            });
         });
-
-    });
-
-
 });

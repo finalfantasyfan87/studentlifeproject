@@ -40,6 +40,8 @@ public class ProfessorController {
         modelAndView.addObject("profiledProfessor",profiledProfessor);
         modelAndView.addObject("professorComment",professorComment);
 
+        
+
         return modelAndView;
     }
 

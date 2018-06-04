@@ -1,8 +1,8 @@
 package jhaywoo2.depaul.studentlife.controller;
 
-        import jhaywoo2.depaul.studentlife.model.Student;
-        import jhaywoo2.depaul.studentlife.model.StudentMessage;
-        import jhaywoo2.depaul.studentlife.service.StudentService;
+import jhaywoo2.depaul.studentlife.model.Student;
+import jhaywoo2.depaul.studentlife.model.StudentMessage;
+import jhaywoo2.depaul.studentlife.service.StudentService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,10 +11,10 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-        import org.springframework.web.bind.annotation.RequestParam;
-        import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.ModelAndView;
+
 import javax.validation.Valid;
-        import java.util.List;
+import java.util.List;
 
 @Controller
 public class StudentController {
@@ -78,6 +78,10 @@ public class StudentController {
             Iterable<Student> students = studentService.getAllStudents();
             modelAndView.setViewName("students");
             modelAndView.addObject("message",studentMessage);
+
+            List<StudentMessage> studentMessages = studentService.displayAllMessages(student.getUserName());
+            logger.debug("Messages for: " +studentMessages);
+            modelAndView.addObject("studentMessages",studentMessages);
             modelAndView.addObject("students",students);
         } else {
             String userExistMessage = "Please verify you have an account with us.";
@@ -95,17 +99,6 @@ public class StudentController {
         Iterable<Student> students = studentService.getAllStudents();
         modelAndView.addObject("message",studentMessage);
         modelAndView.addObject("students", students);
-        return modelAndView;
-    }
-
-    @GetMapping("/getListOfMessages")
-
-    public ModelAndView getListMessages(@RequestParam("userName") String userName){
-        ModelAndView modelAndView = new ModelAndView();
-        modelAndView.setViewName("students");
-        List<StudentMessage> messages = studentService.displayAllMessages(userName);
-        logger.debug("Messages for: " +messages);
-        modelAndView.addObject("studentMessages",messages);
         return modelAndView;
     }
 
