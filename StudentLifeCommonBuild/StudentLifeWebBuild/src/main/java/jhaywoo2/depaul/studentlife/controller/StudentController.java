@@ -75,8 +75,10 @@ public class StudentController {
         modelAndView.addObject("doesStudentExist", doesStudentExist);
         if (doesStudentExist) {
             StudentMessage studentMessage = new StudentMessage();
-            modelAndView.addObject("message",studentMessage);
+            Iterable<Student> students = studentService.getAllStudents();
             modelAndView.setViewName("students");
+            modelAndView.addObject("message",studentMessage);
+            modelAndView.addObject("students",students);
         } else {
             String userExistMessage = "Please verify you have an account with us.";
             modelAndView.setViewName("login");
