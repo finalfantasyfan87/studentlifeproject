@@ -25,6 +25,27 @@
     </tbody>
 </table>
 
+<table id ="messages" class="table table-striped table-bordered" style="width:50%">
+    <thead>
+    <tr>
+        <th scope="col">MessageId</th>
+        <th scope="col">Recipient</th>
+        <th scope="col">Message</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <c:forEach items="${messages}" var="message" varStatus="status">
+        <tr>
+            <td>${message.messageId}</td>
+            <td>${message.messageRecipient}</td>
+            <td>${message.message}</td>
+        </tr>
+    </c:forEach>
+    </tbody>
+</table>
+
+
 
 <jsp:include page="sendMessageForm.jsp"/>
 

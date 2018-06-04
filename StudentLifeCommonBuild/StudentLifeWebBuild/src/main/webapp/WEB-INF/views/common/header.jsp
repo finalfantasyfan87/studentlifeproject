@@ -2,6 +2,7 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<html>
 <head>
     <meta http-equiv='cache-control' content='no-cache'>
     <meta http-equiv='expires' content='0'>
@@ -18,7 +19,6 @@
     <script src="<c:url value="/resources/js/student.js"/>"></script>
     <script src="<c:url value="/resources/js/rateTeacher.js"/>"></script>
 </head>
-
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#e1bee7;">
     <a class="navbar-brand" href="/studentLife/login">MyStudentLife</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

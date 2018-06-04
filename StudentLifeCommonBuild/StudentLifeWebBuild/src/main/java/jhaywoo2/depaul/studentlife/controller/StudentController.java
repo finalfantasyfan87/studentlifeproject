@@ -63,7 +63,6 @@ public class StudentController {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("login");
 
-
         if (bindingResult.hasFieldErrors("userName") || bindingResult.hasFieldErrors("password")) {
 
             modelAndView.setViewName("login");
