@@ -15,8 +15,8 @@
         <relativePath></relativePath>
     </parent>
     <modules>
-        <module>StudentLifeServiceBuild</module>
-        <module>StudentLifeWebBuild</module>
+        <module>../StudentLifeServiceBuild</module>
+        <module>../StudentLifeWebBuild</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
